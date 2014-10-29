@@ -8,7 +8,7 @@
 <!-- flatui -->
 <head>
 <meta charset="utf-8">
-<title>assistants</title>
+<title>assistant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Loading Bootstrap -->

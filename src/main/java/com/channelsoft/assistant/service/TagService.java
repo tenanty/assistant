@@ -39,7 +39,7 @@ public class TagService {
 		logger.debug("½øÈë CustInfoService.getCustomersByTagId()");
 		Tag tag = tagDao.findOne(tagId);
 		List<Customer> list = new ArrayList<Customer>();
-		list.addAll(tag.getCusts());
+//		list.addAll(tag.getCusts());
 		return list;
 	}
 

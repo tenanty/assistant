@@ -1,6 +1,6 @@
 <%@page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,69 +11,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Loading Bootstrap -->
-<link href="${ctx }/static/flatui/dist/css/vendor/bootstrap.min.css"
-	type="text/css" rel="stylesheet" />
+<link href="${ctx }/static/flatui/dist/css/vendor/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="${ctx }/static/jScrollbar/jScrollbar.jquery.css" media="screen" />
 
 <!-- Loading Flat UI -->
-<link href="${ctx }/static/flatui/dist/css/flat-ui-pro.css"
-	type="text/css" rel="stylesheet" />
-<link rel="shortcut icon"
-	href="${ctx }/static/flatui/dist/img/favicon.ico">
-<script type="text/javascript"
-	src="${ctx}/static/datatables/media/js/jquery.js"></script>
-<script type="text/javascript"
-	src="${ctx}/static/datatables/media/js/jquery.dataTables.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		
-		$("#example tbody tr").click( function( e ) {
-	        if ( $(this).hasClass('row_selected') ) {
-	            $(this).removeClass('row_selected');
-	        }
-	        else {
-	            oTable.$('tr.row_selected').removeClass('row_selected');
-	            $(this).addClass('row_selected');
-	        }
-	    });
-		
-		var giCount = 2;
-		var oTable = jQuery('#example').DataTable({
-			sAjaxSource : "${ctx}/data/1.json",
-			bDeferRender:true,
-			deferRender : true,//快速删除搜索条中内容
-			bFilter: false,//控制是否对表格数据进行过滤,设置为false时将不出现查询输入框,默认为true
-			aoColumns : [ {
-				"sTitle" : "客户名",
-				"mData" : "name",
-				"bVisible": false
-			}, {
-				"sTitle" : "公司",
-				"mData" : "position"
-			}, {
-				"sTitle" : "职务",
-				"mData" : "start_date"
-			}, {
-				"sTitle" : "地址",
-				"mData" : "salary"
-			} ]
-		});
-		
-		jQuery('#myButton').click(function(){
-			console.log(oTable.$('tr.row_selected'));
-			jQuery('#example').DataTable().row.add(
-				{"name": giCount +'.1',
-				 "position": giCount +'.2',
-				 "salary": giCount +'.3',
-				 "start_date": giCount +'.4',
-				 "office": giCount +'.5',
-				 "extn": "5421"
-				}).draw();
-			giCount ++;
-		});
-	});
-</script>
-<link href="${ctx}/static/datatables/media/css/jquery.dataTables.css"
-	type="text/css" rel="stylesheet" />
+<link href="${ctx }/static/flatui/dist/css/flat-ui-pro.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="${ctx }/static/flatui/dist/img/favicon.ico">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+      <script src="static/flatui//dist/js/vendor/html5shiv.js"></script>
+      <script src="static/flatui//dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" href="${ctx }/static/listnav/css/listnav.css" type="text/css" media="screen" charset="utf-8" />
 </head>
 <style>
 body {
@@ -86,65 +37,6 @@ li {
 }
 </style>
 <body>
-
-	<!-- Static navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-				</button>
-				<a class="navbar-brand" href="${ctx }/home">xxxxxxxxxx</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="${ctx }/customer">客户管理</a></li>
-					<li><a href="${ctx }/schedule">日程</a></li>
-					<li><a href="${ctx }/history">联络历史</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">设置 <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="${ctx }/tag">联系人标签</a></li>
-						</ul></li>
-				</ul>
-				<form class="navbar-form navbar-left" action="${ctx }/research"
-					role="search">
-					<div class="form-group">
-						<div class="input-group">
-							<input class="form-control" id="navbarInput-01" type="search"
-								placeholder="Search" /> <span class="input-group-btn"> <a
-								id="research" type="submit" class="btn"> <span
-									class="fui-search"></span>
-							</a>
-							</span>
-						</div>
-					</div>
-				</form>
-				<button id="logout" class="btn btn-primary navbar-btn navbar-right">登出</button>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</div>
-
-
-	<div class="container">
-		<table id="example" class="row-border" cellspacing="0" width="100%">
-			<thead>
-				<tr>
-					<th>name</th>
-					<th>position</th>
-					<th>start_date</th>
-					<th>salary</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-	<button id="myButton" type="button" value="xxxx">xxxx</button>
-</body>
-</html>
-
-	<%--
 	<!-- Static navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -364,4 +256,6 @@ li {
 				location.href ="navbar-fixed-top-research.html";
 			});
 		});
-	</script> --%>
+	</script>
+</body>
+</html>

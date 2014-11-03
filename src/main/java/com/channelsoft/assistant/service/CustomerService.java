@@ -1,5 +1,7 @@
 package com.channelsoft.assistant.service;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +23,7 @@ public class CustomerService {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	private CustomerDao custInfoDao;
+	private CustomerDao customerDao;
 	
 	/**
 	 * 获取所有客户资料
@@ -29,7 +31,7 @@ public class CustomerService {
 	 */
 	public Iterable<Customer> getAllCustomer(){
 		logger.debug("进入 CustInfoService.findCustInfoById()");
-		return custInfoDao.findAll();
+		return customerDao.findAll();
 	}
 
 	/**
@@ -40,7 +42,7 @@ public class CustomerService {
 	 */
 	public Customer findCustInfoById(Long custId) {
 		logger.debug("进入 CustInfoService.findCustInfoById()");
-		Customer custInfo = custInfoDao.findOne(custId);
+		Customer custInfo = customerDao.findOne(custId);
 		if (custInfo == null) {
 			throw new ObjectNotExistException("客户信息");
 		}
@@ -56,7 +58,12 @@ public class CustomerService {
 		logger.debug("进入 CustInfoService.deleteCustInfoById()");
 		Customer custInfo = new Customer();
 		custInfo.setCustId(custId);
-		custInfoDao.delete(custInfo);
+		customerDao.delete(custInfo);
+	}
+	
+	public List<Customer> findAll(){
+		logger.debug("进入 CustInfoService.findAll()");
+		return (List<Customer>) customerDao.findAll();
 	}
 	
 }

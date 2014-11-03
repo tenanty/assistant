@@ -22,14 +22,14 @@ public class CustomerController {
 
 	@RequestMapping(value = "/customer", method = RequestMethod.GET)
 	public String customer() {
-		logger.debug("进入 CustomerController.customer()");
+		logger.debug("杩涘叆 CustomerController.customer()");
 		return "business/customer";
 	}
 
 	@RequestMapping(value = "/getCustomer", method = RequestMethod.GET)
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll() {
-		logger.debug("进入 CustomerController.customer()");
+		logger.debug("杩涘叆 CustomerController.customer()");
 		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
 		List<Customer> data = (List<Customer>) customerService.getAllCustomer();
 		response.setData(data);

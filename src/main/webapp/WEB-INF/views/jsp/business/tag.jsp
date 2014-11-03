@@ -158,7 +158,6 @@ table.dataTable tr.selected td:first-child:before {
 	    } );
 	 
 	    $('#example').DataTable( {
-	        dom: "Tfrtip",
 	        scrollY: 300,
 	        paging: false,
 	        ajax: "${ctx}/getTag",
@@ -166,16 +165,7 @@ table.dataTable tr.selected td:first-child:before {
 	            { data: null, defaultContent: '', orderable: false },
 	            { data: "tagName" }
 	        ],
-	        order: [ 1, 'asc' ],
-	        tableTools: {
-	            sRowSelect: "os",
-	            sRowSelector: 'td:first-child',
-	            aButtons: [
-	                { sExtends: "editor_create", editor: editor },
-	                { sExtends: "editor_edit",   editor: editor },
-	                { sExtends: "editor_remove", editor: editor }
-	            ]
-	        }
+	        order: [ 1, 'asc' ]
 	    } );
 	} );
 	</script>

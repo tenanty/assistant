@@ -9,9 +9,9 @@ import java.security.SecureRandom;
 import org.apache.commons.lang3.Validate;
 
 /**
- * Ö§³ÖSHA-1/MD5ÏûÏ¢ÕªÒªµÄ¹¤¾ßÀà.
+ * æ”¯æŒSHA-1/MD5æ¶ˆæ¯æ‘˜è¦çš„å·¥å…·ç±».
  * 
- * ·µ»ØByteSource£¬¿É½øÒ»²½±»±àÂëÎªHex, Base64»òUrlSafeBase64
+ * è¿”å›žByteSourceï¼Œå¯è¿›ä¸€æ­¥è¢«ç¼–ç ä¸ºHex, Base64æˆ–UrlSafeBase64
  * 
  * @author calvin
  */
@@ -23,7 +23,7 @@ public class Digests {
 	private static SecureRandom random = new SecureRandom();
 
 	/**
-	 * ¶ÔÊäÈë×Ö·û´®½øÐÐsha1É¢ÁÐ.
+	 * å¯¹è¾“å…¥å­—ç¬¦ä¸²è¿›è¡Œsha1æ•£åˆ—.
 	 */
 	public static byte[] sha1(byte[] input) {
 		return digest(input, SHA1, null, 1);
@@ -38,7 +38,7 @@ public class Digests {
 	}
 
 	/**
-	 * ¶Ô×Ö·û´®½øÐÐÉ¢ÁÐ, Ö§³Ömd5Óësha1Ëã·¨.
+	 * å¯¹å­—ç¬¦ä¸²è¿›è¡Œæ•£åˆ—, æ”¯æŒmd5ä¸Žsha1ç®—æ³•.
 	 */
 	private static byte[] digest(byte[] input, String algorithm, byte[] salt, int iterations) {
 		try {
@@ -61,9 +61,9 @@ public class Digests {
 	}
 
 	/**
-	 * Éú³ÉËæ»úµÄByte[]×÷Îªsalt.
+	 * ç”Ÿæˆéšæœºçš„Byte[]ä½œä¸ºsalt.
 	 * 
-	 * @param numBytes byteÊý×éµÄ´óÐ¡
+	 * @param numBytes byteæ•°ç»„çš„å¤§å°
 	 */
 	public static byte[] generateSalt(int numBytes) {
 		Validate.isTrue(numBytes > 0, "numBytes argument must be a positive integer (1 or larger)", numBytes);
@@ -74,14 +74,14 @@ public class Digests {
 	}
 
 	/**
-	 * ¶ÔÎÄ¼þ½øÐÐmd5É¢ÁÐ.
+	 * å¯¹æ–‡ä»¶è¿›è¡Œmd5æ•£åˆ—.
 	 */
 	public static byte[] md5(InputStream input) throws IOException {
 		return digest(input, MD5);
 	}
 
 	/**
-	 * ¶ÔÎÄ¼þ½øÐÐsha1É¢ÁÐ.
+	 * å¯¹æ–‡ä»¶è¿›è¡Œsha1æ•£åˆ—.
 	 */
 	public static byte[] sha1(InputStream input) throws IOException {
 		return digest(input, SHA1);

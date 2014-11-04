@@ -14,7 +14,7 @@ public class HistoryController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String history() {
-		logger.debug("½øÈë HistoryController.history()");
+		logger.debug("è¿›å…¥ HistoryController.history()");
 		return "business/history";
 	}
 }

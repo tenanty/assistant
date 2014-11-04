@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
- * 历史记录管理
+ * 鍘嗗彶璁板綍绠＄悊
  * 
  * @author tenanty
  * 

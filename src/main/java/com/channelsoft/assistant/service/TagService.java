@@ -20,23 +20,23 @@ public class TagService {
 	private TagDao tagDao;
 
 	public Tag saveTag(Tag tag) {
-		logger.debug("½øÈë TagService.saveTag()·½·¨.");
+		logger.debug("è¿›å…¥ TagService.saveTag()æ–¹æ³•.");
 		return tagDao.save(tag);
 	}
 
 	public List<Tag> findAll() {
-		logger.debug("½øÈë TagService.findAll()·½·¨.");
+		logger.debug("è¿›å…¥ TagService.findAll()æ–¹æ³•.");
 		return (List<Tag>) tagDao.findAll();
 	}
 
 	/**
-	 * ¸ù¾İ±êÇ©±àºÅ»ñÈ¡¶ÔÓ¦µÄ¿Í»§ĞÅÏ¢¼¯ºÏ
+	 * æ ¹æ®æ ‡ç­¾ç¼–å·è·å–å¯¹åº”çš„å®¢æˆ·ä¿¡æ¯é›†åˆ
 	 * 
 	 * @param tagId
 	 * @return
 	 */
 	public List<Customer> getCustomersByTagId(Long tagId) {
-		logger.debug("½øÈë CustInfoService.getCustomersByTagId()");
+		logger.debug("è¿›å…¥ CustInfoService.getCustomersByTagId()");
 		Tag tag = tagDao.findOne(tagId);
 		List<Customer> list = new ArrayList<Customer>();
 //		list.addAll(tag.getCusts());

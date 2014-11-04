@@ -23,7 +23,7 @@ public class TagDaoTest {
 		for(int i=0;i<100;i++){
 			Tag tag = new Tag();
 			tag.setCrateTime(new Date());
-			tag.setTagName("²âÊÔ±êÇ©"+i);
+			tag.setTagName("æµ‹è¯•æ ‡ç­¾"+i);
 			tagDao.save(tag);
 		}
 	}

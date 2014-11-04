@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * 登录
+ * 鐧诲綍
  * 
  * @author tenanty
  * 
@@ -22,13 +22,13 @@ public class LoginController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String login() {
-		logger.debug("进入 LoginController.login()");
+		logger.debug("杩涘叆 LoginController.login()");
 		return "account/login";
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
 	public String fail(@RequestParam(FormAuthenticationFilter.DEFAULT_USERNAME_PARAM) String userName, Model model) {
-		logger.debug("进入 LoginController.fail()");
+		logger.debug("杩涘叆 LoginController.fail()");
 		model.addAttribute(FormAuthenticationFilter.DEFAULT_USERNAME_PARAM, userName);
 		return "account/login";
 	}

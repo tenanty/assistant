@@ -6,14 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 /**
- * Í³Ò»¶¨ÒåidµÄentity»ùÀà.
+ * ç»Ÿä¸€å®šä¹‰idçš„entityåŸºç±».
  * 
- * »ùÀàÍ³Ò»¶¨ÒåidµÄÊôĞÔÃû³Æ¡¢Êı¾İÀàĞÍ¡¢ÁĞÃûÓ³Éä¼°Éú³É²ßÂÔ.
- * OracleĞèÒªÃ¿¸öEntity¶ÀÁ¢¶¨ÒåidµÄSEQUCENCEÊ±£¬²»¼Ì³ĞÓÚ±¾Àà¶ø¸ÄÎªÊµÏÖÒ»¸öIdableµÄ½Ó¿Ú¡£
+ * åŸºç±»ç»Ÿä¸€å®šä¹‰idçš„å±æ€§åç§°ã€æ•°æ®ç±»å‹ã€åˆ—åæ˜ å°„åŠç”Ÿæˆç­–ç•¥.
+ * Oracleéœ€è¦æ¯ä¸ªEntityç‹¬ç«‹å®šä¹‰idçš„SEQUCENCEæ—¶ï¼Œä¸ç»§æ‰¿äºæœ¬ç±»è€Œæ”¹ä¸ºå®ç°ä¸€ä¸ªIdableçš„æ¥å£ã€‚
  * 
  * @author calvin
  */
-// JPA »ùÀàµÄ±êÊ¶
+// JPA åŸºç±»çš„æ ‡è¯†
 @MappedSuperclass
 public abstract class IdEntity {
 

@@ -81,10 +81,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 	}
 
     /** 
-     * °´aMaskµÄ¸ñÊ½¶¨Òå£¬°ÑÈÕÆÚ¸ñÊ½µÄ×Ö·û´®strDate×ª»»ÎªDate¶ÔÏó
+     * æŒ‰aMaskçš„æ ¼å¼å®šä¹‰ï¼ŒæŠŠæ—¥æœŸæ ¼å¼çš„å­—ç¬¦ä¸²strDateè½¬æ¢ä¸ºDateå¯¹è±¡
      * @param aMask
      * @param strDate
-     * @return     Èç¹ûÈÕÆÚ¸ñÊ½µÄ×Ö·û´®strDateÎª¿Õ/null£¬Ôò·µ»Ønull
+     * @return     å¦‚æœæ—¥æœŸæ ¼å¼çš„å­—ç¬¦ä¸²strDateä¸ºç©º/nullï¼Œåˆ™è¿”å›null
      * @throws ParseException
      */
 	public static final Date convertStringToDate(String aMask, String strDate) throws ParseException {
@@ -92,7 +92,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			log.debug("converting '" + strDate + "' to date with mask '" + aMask + "'");
 		}
 		if (StringUtils.isEmpty(strDate)) {
-			// throw new ParseException("´ı×ª»»µÄÈÕÆÚ¸ñÊ½×Ö·û´®²»ÄÜÎª¿Õ£¡",-999);
+			// throw new ParseException("å¾…è½¬æ¢çš„æ—¥æœŸæ ¼å¼å­—ç¬¦ä¸²ä¸èƒ½ä¸ºç©ºï¼",-999);
 			return null;
 		}
 		return DateUtils.parseDate(strDate, new String[]{aMask});
@@ -212,10 +212,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * ·µ»ØÒ»¸öÖ¸¶¨ÈÕÆÚµÄÏÂÒ»Ìì
+     * è¿”å›ä¸€ä¸ªæŒ‡å®šæ—¥æœŸçš„ä¸‹ä¸€å¤©
      *
-     * @param date ³õÊ¼ÈÕÆÚ
-     * @return ³õÊ¼ÈÕÆÚ¼ÓÒ»ÌìºóµÄÈÕÆÚ
+     * @param date åˆå§‹æ—¥æœŸ
+     * @return åˆå§‹æ—¥æœŸåŠ ä¸€å¤©åçš„æ—¥æœŸ
      * @author zhanglelei
      * @date 2007-2-25 22:30:29 
      */
@@ -226,10 +226,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 		return calendar.getTime();
     }
     /**
-     * ·µ»ØÒ»¸öÖ¸¶¨ÈÕÆÚµÄÇ°Ò»Ìì
+     * è¿”å›ä¸€ä¸ªæŒ‡å®šæ—¥æœŸçš„å‰ä¸€å¤©
      *
-     * @param date ³õÊ¼ÈÕÆÚ
-     * @return ³õÊ¼ÈÕÆÚ¼ÓÒ»ÌìºóµÄÈÕÆÚ
+     * @param date åˆå§‹æ—¥æœŸ
+     * @return åˆå§‹æ—¥æœŸåŠ ä¸€å¤©åçš„æ—¥æœŸ
      * @author zhanglelei
      * @date 2007-2-25 22:30:29 
      */
@@ -241,7 +241,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¡µÃÒ»¸öÖ¸¶¨ÈÕÆÚËùÔÚÔÂµÄµÚÒ»Ìì
+     * å–å¾—ä¸€ä¸ªæŒ‡å®šæ—¥æœŸæ‰€åœ¨æœˆçš„ç¬¬ä¸€å¤©
      * 
      * @return
      * @author liuwenu
@@ -257,7 +257,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * »ñµÃÒ»¸öÖ¸¶¨ÈÕÆÚËùÔÚÔÂµÄÏÂ¸öÔÂµÄµÚÒ»Ìì
+     * è·å¾—ä¸€ä¸ªæŒ‡å®šæ—¥æœŸæ‰€åœ¨æœˆçš„ä¸‹ä¸ªæœˆçš„ç¬¬ä¸€å¤©
      * @param date
      * @return
      */
@@ -273,7 +273,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 		return calendar.getTime();
     }
     /**
-     * È¡µÃÒ»¸öÖ¸¶¨ÈÕÆÚËùÔÚÔÂµÄ×îºóÒ»Ìì
+     * å–å¾—ä¸€ä¸ªæŒ‡å®šæ—¥æœŸæ‰€åœ¨æœˆçš„æœ€åä¸€å¤©
      * 
      * @return
      * @author liuwenu
@@ -291,10 +291,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¡µÃÒÔyyyyMMddHHmmss¸ñÊ½µÄÊ±¼ä´Á×Ö·û´®
+     * å–å¾—ä»¥yyyyMMddHHmmssæ ¼å¼çš„æ—¶é—´æˆ³å­—ç¬¦ä¸²
      * 
      * @return
-     * @author ÍõÖ¾Ã÷
+     * @author ç‹å¿—æ˜
      */
     public static final String getCompactTimeStamp() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -302,10 +302,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¡µÃÖ¸¶¨ÈÕÆÚËùÔÚµÄÔÂ·İ
+     * å–å¾—æŒ‡å®šæ—¥æœŸæ‰€åœ¨çš„æœˆä»½
      * @param date
      * @return
-     * @author ÍõÖ¾Ã÷
+     * @author ç‹å¿—æ˜
      */
     public static final int getMonthOf(Date date){
 		Calendar calendar = Calendar.getInstance();
@@ -314,10 +314,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¡µÃÖ¸¶¨ÈÕÆÚËùÔÚµÄÄê·İ
+     * å–å¾—æŒ‡å®šæ—¥æœŸæ‰€åœ¨çš„å¹´ä»½
      * @param date
      * @return
-     * @author ÁõÑå¾ü
+     * @author åˆ˜å½¦å†›
      */
     public static final int getYearOf(Date date){
     	Calendar calendar = Calendar.getInstance();
@@ -326,11 +326,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * »ñÈ¡Ö¸¶¨ÈÕÆÚµÄÈÕ×Ó
+     * è·å–æŒ‡å®šæ—¥æœŸçš„æ—¥å­
      * @param date
      * @return
      *
-     * @author ÁõÑå¾ü   
+     * @author åˆ˜å½¦å†›   
      * 2007-10-11
      */
     public static final int getDayOf(Date date){
@@ -340,10 +340,10 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¡µÃÖ¸¶¨ÈÕÆÚËùÔÚµÄĞ¡Ê±
+     * å–å¾—æŒ‡å®šæ—¥æœŸæ‰€åœ¨çš„å°æ—¶
      * @param date
      * @return
-     * @author ÍõÖ¾Ã÷
+     * @author ç‹å¿—æ˜
      */
     public static final int getHourOf(Date date){
 		Calendar calendar = Calendar.getInstance();
@@ -352,11 +352,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®Ç°
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å‰
      *
-     * @param srcDateString Ô´ÈÕÆÚ×Ö·û´®
-     * @param targetDateString Ä¿±êÈÕÆÚ×Ö·û´®
-     * @param pattern ×Ö·û´®ÈÕÆÚ¸ñÊ½
+     * @param srcDateString æºæ—¥æœŸå­—ç¬¦ä¸²
+     * @param targetDateString ç›®æ ‡æ—¥æœŸå­—ç¬¦ä¸²
+     * @param pattern å­—ç¬¦ä¸²æ—¥æœŸæ ¼å¼
      * @return 
      * @author zhanglelei
      * @date 2007-2-25 18:40:37 
@@ -367,19 +367,19 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     	try {
     		srcDate = DateUtil.convertStringToDate(pattern, srcDateString);
     	} catch (ParseException e) { 
-    		throw new ServiceException("Ô´ÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+srcDateString+"]",e);
+    		throw new ServiceException("æºæ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+srcDateString+"]",e);
     	}
     	Date targetDate;
     	try {
     		targetDate = DateUtil.convertStringToDate(pattern, targetDateString);
     	} catch (ParseException e) {
-    		throw new ServiceException("Ä¿±êÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+targetDateString+"]",e);
+    		throw new ServiceException("ç›®æ ‡æ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+targetDateString+"]",e);
     	}
     	return before(srcDate, targetDate);
     }
     
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®Ç°,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å‰,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @param targetDateString
      * @return  
@@ -390,19 +390,19 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 		try {
 			srcDate = DateUtil.convertStringToDate(srcDateString);
 		} catch (ParseException e) { 
-			throw new ServiceException("Ô´ÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+srcDateString+"]",e);
+			throw new ServiceException("æºæ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+srcDateString+"]",e);
 		}
     	Date targetDate;
 		try {
 			targetDate = DateUtil.convertStringToDate(targetDateString);
 		} catch (ParseException e) {
-			throw new ServiceException("Ä¿±êÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+targetDateString+"]",e);
+			throw new ServiceException("ç›®æ ‡æ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+targetDateString+"]",e);
 		}
 		return before(srcDate, targetDate);
 	}
     
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®Ç°,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å‰,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @param targetDate
      * @return
@@ -412,11 +412,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			Date srcDate = DateUtil.convertStringToDate(srcDateString);
 			return before(srcDate, targetDate);
 		} catch (ParseException e) { 
-			throw new ServiceException("Ô´ÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+srcDateString+"]",e);
+			throw new ServiceException("æºæ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+srcDateString+"]",e);
 		}
     }
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®ºó,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @param targetDate
      * @return
@@ -426,11 +426,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			Date srcDate = DateUtil.convertStringToDate(srcDateString);
 			return after(srcDate, targetDate);
 		} catch (ParseException e) { 
-			throw new ServiceException("Ô´ÈÕÆÚ¸ñÊ½×ª»»Òì³££º["+srcDateString+"]",e);
+			throw new ServiceException("æºæ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š["+srcDateString+"]",e);
 		}
     }
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚµ±Ç°ÈÕÆÚÖ®Ç°,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨å½“å‰æ—¥æœŸä¹‹å‰,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @return
      */
@@ -438,7 +438,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     	return before(srcDateString, new Date());	
     }
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚµ±Ç°ÈÕÆÚÖ®ºó,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨å½“å‰æ—¥æœŸä¹‹å,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @return
      */
@@ -446,7 +446,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     	return after(srcDateString, new Date());	
     }
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®Ç°,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å‰,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDate
      * @param targetDate
      * @return
@@ -455,7 +455,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     	return srcDate.before(targetDate);
     }
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®ºó,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDate
      * @param targetDate
      * @return
@@ -465,7 +465,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®ºó,ÈÕÆÚ¸ñÊ½Îª yyyy-MM-dd
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å,æ—¥æœŸæ ¼å¼ä¸º yyyy-MM-dd
      * @param srcDateString
      * @param targetDateString
      * @return
@@ -476,11 +476,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
 
     /**
-     * ±È½ÏÔ´ÈÕÆÚÊÇ·ñÔÚÄ¿±êÈÕÆÚÖ®ºó
+     * æ¯”è¾ƒæºæ—¥æœŸæ˜¯å¦åœ¨ç›®æ ‡æ—¥æœŸä¹‹å
      *
-     * @param srcDateString Ô´ÈÕÆÚ×Ö·û´®
-     * @param targetDateString Ä¿±êÈÕÆÚ×Ö·û´®
-     * @param pattern ×Ö·û´®ÈÕÆÚ¸ñÊ½
+     * @param srcDateString æºæ—¥æœŸå­—ç¬¦ä¸²
+     * @param targetDateString ç›®æ ‡æ—¥æœŸå­—ç¬¦ä¸²
+     * @param pattern å­—ç¬¦ä¸²æ—¥æœŸæ ¼å¼
      * @return
      * @author zhanglelei
      * @date 2007-2-25 18:48:27 
@@ -491,7 +491,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
 
     /**
-     * °´aMaskµÄ¸ñÊ½¶¨Òå£¬´ÓÈÕÆÚ¸ñÊ½µÄ×Ö·û´®strDateÖĞÌáÈ¡ÄêÔÂĞÅÏ¢¡£
+     * æŒ‰aMaskçš„æ ¼å¼å®šä¹‰ï¼Œä»æ—¥æœŸæ ¼å¼çš„å­—ç¬¦ä¸²strDateä¸­æå–å¹´æœˆä¿¡æ¯ã€‚
 	 * @param aMask
 	 * @param strDate
 	 * @return
@@ -505,12 +505,12 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			return DateUtil.convertDateToString(aMask,
 					convertStringToDate(strDate));
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½×ª»»Òì³££º[" + strDate + "]", e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼è½¬æ¢å¼‚å¸¸ï¼š[" + strDate + "]", e);
 		}
 	}
 	
 	/**
-	 * ±È½ÏÈÕÆÚ¸ñÊ½µÄÁ½¸ö×Ö·û´®ÖĞÄêÔÂĞÅÏ¢ÊÇ·ñÏàÍ¬¡£
+	 * æ¯”è¾ƒæ—¥æœŸæ ¼å¼çš„ä¸¤ä¸ªå­—ç¬¦ä¸²ä¸­å¹´æœˆä¿¡æ¯æ˜¯å¦ç›¸åŒã€‚
 	 * @param srcDateString
 	 * @param targetDateString
 	 * @return
@@ -525,13 +525,13 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 				getYearMonth("yyyyMM", targetDateString));
 	}
 	
-    //**************************************************************** xsm±¨±íÍ³¼ÆÊ¹ÓÃ
+    //**************************************************************** xsmæŠ¥è¡¨ç»Ÿè®¡ä½¿ç”¨
 	
     /**
-     * ·µ»ØÒ»¸öÖ¸¶¨ÈÕÆÚµÄÇ°Ò»Ìì
+     * è¿”å›ä¸€ä¸ªæŒ‡å®šæ—¥æœŸçš„å‰ä¸€å¤©
      *
-     * @param date ³õÊ¼ÈÕÆÚ
-     * @return ³õÊ¼ÈÕÆÚ¼õÒ»ÌìºóµÄÈÕÆÚ
+     * @param date åˆå§‹æ—¥æœŸ
+     * @return åˆå§‹æ—¥æœŸå‡ä¸€å¤©åçš„æ—¥æœŸ
      * @author wangzm
      * @date 2007-9-5 
      */
@@ -548,11 +548,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃÉÏÔÂÔÂ·İ(¸ñÊ½£ºyyyy-MM)
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—ä¸Šæœˆæœˆä»½(æ ¼å¼ï¼šyyyy-MM)
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	@SuppressWarnings("deprecation")
@@ -563,16 +563,16 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			String month = DateFormatUtils.format(date, "yyyy-MM");
 			return month;
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃµ±ÔÂÔÂ·İ(¸ñÊ½£ºyyyy-MM)
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—å½“æœˆæœˆä»½(æ ¼å¼ï¼šyyyy-MM)
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	public static String getCurrentMonth(String strDate){
@@ -581,16 +581,16 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			String month = DateFormatUtils.format(date, "yyyy-MM");
 			return month;
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃµ±ÖÜÖÜÒ»Ê±¼ä(¸ñÊ½£ºyyyy-MM-dd)
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—å½“å‘¨å‘¨ä¸€æ—¶é—´(æ ¼å¼ï¼šyyyy-MM-dd)
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	public static String getWeekFirstDay(String strDate){
@@ -601,7 +601,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			
 			int week = cal.get(Calendar.DAY_OF_WEEK);
 			log.debug("week=" + week);
-			if(week == 1){//ÖÜÈÕ
+			if(week == 1){//å‘¨æ—¥
 				cal.add(Calendar.DAY_OF_WEEK, -6);
 			}else{
 				cal.set(Calendar.DAY_OF_WEEK, 2);//week-(week-1) + 1
@@ -609,17 +609,17 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			
 			return DateUtil.convertDateToString(cal.getTime());
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
 	
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃÉÏÖÜÖÜÄ©Ê±¼ä(¸ñÊ½£ºyyyy-MM-dd)
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—ä¸Šå‘¨å‘¨æœ«æ—¶é—´(æ ¼å¼ï¼šyyyy-MM-dd)
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	public static String getLastWeekLastDay(String strDate){
@@ -636,16 +636,16 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			}
 			return DateUtil.convertDateToString(cal.getTime());
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃÉÏÖÜÖÜÒ»Ê±¼ä(¸ñÊ½£ºyyyy-MM-dd)
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—ä¸Šå‘¨å‘¨ä¸€æ—¶é—´(æ ¼å¼ï¼šyyyy-MM-dd)
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	public static String getLastWeekFirstDay(String strDate){
@@ -662,16 +662,16 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			
 			return DateUtil.convertDateToString(cal.getTime());
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
 	/**
-	 * ´ÓÈÕÆÚ»ñµÃÖÜ(´Ó1¿ªÊ¼£¬×î´óÖµÎª7)Ôİ¶¨ÖÜÈÕÎªÒ»ÖÜ×îºóÒ»Ìì
-	 * @param strDate(¸ñÊ½£ºyyyy-MM-dd)
+	 * ä»æ—¥æœŸè·å¾—å‘¨(ä»1å¼€å§‹ï¼Œæœ€å¤§å€¼ä¸º7)æš‚å®šå‘¨æ—¥ä¸ºä¸€å‘¨æœ€åä¸€å¤©
+	 * @param strDate(æ ¼å¼ï¼šyyyy-MM-dd)
 	 * @return
 	 *
-	 * @author ÍõÖ¾Ã÷
+	 * @author ç‹å¿—æ˜
 	 * CreateDate: 2007-6-25
 	 */
 	public static int getWeek(String strDate){
@@ -684,12 +684,12 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 			
 			return week;
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
 	}
 	
     /**
-     * È¡µÃÒ»¸öÖ¸¶¨ÈÕÆÚËùÔÚÔÂµÄ×îºóÒ»Ìì
+     * å–å¾—ä¸€ä¸ªæŒ‡å®šæ—¥æœŸæ‰€åœ¨æœˆçš„æœ€åä¸€å¤©
      * 
      * @return
      * @author liuwenu
@@ -699,7 +699,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
 		try {
 			date = DateUtil.convertStringToDate(getLastMonth(strDate) + "-01");
 		} catch (ParseException e) {
-			throw new ServiceException("ÈÕÆÚ¸ñÊ½²»ÕıÈ·:" + e);
+			throw new ServiceException("æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®:" + e);
 		}
     	Calendar calendar = Calendar.getInstance();
 		calendar.setTime(date);
@@ -713,7 +713,7 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * ÊÇ·ñÎªµ±Ç°ÔÂ·İµÄ×îºóÒ»Ìì
+     * æ˜¯å¦ä¸ºå½“å‰æœˆä»½çš„æœ€åä¸€å¤©
      * @param strDate
      * @return
      */
@@ -727,11 +727,11 @@ private static Log log = LogFactory.getLog(DateUtil.class);
     }
     
     /**
-     * È¥µôÈÕÆÚÖ®¼äµÄ·Ö¸ô·û
+     * å»æ‰æ—¥æœŸä¹‹é—´çš„åˆ†éš”ç¬¦
      * @param strDate
      * @return
      *
-     * @author ÍõÖ¾Ã÷
+     * @author ç‹å¿—æ˜
      * CreateDate: 2007-7-18
      */
     public static String convertToNoSeparateStringDate(String strDate){

@@ -11,7 +11,7 @@ import com.channelsoft.assistant.entity.Email;
 public interface EmailInfoDao extends PagingAndSortingRepository<Email, Long> {
 
 	/**
-	 * 更新邮箱描述信息
+	 * 鏇存柊閭鎻忚堪淇℃伅
 	 * 
 	 * @param emailDesc
 	 * @param emailId
@@ -22,7 +22,7 @@ public interface EmailInfoDao extends PagingAndSortingRepository<Email, Long> {
 	public void updateEmailInfoDescById(String emailDesc, Long emailId);
 
 	/**
-	 * 更新邮箱地址信息
+	 * 鏇存柊閭鍦板潃淇℃伅
 	 * 
 	 * @param emailDesc
 	 * @param emailId

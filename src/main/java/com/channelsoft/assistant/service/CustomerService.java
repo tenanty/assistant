@@ -12,7 +12,7 @@ import com.channelsoft.assistant.repository.CustomerDao;
 import com.channelsoft.assistant.util.ObjectNotExistException;
 
 /**
- * ¿Í»§ĞÅÏ¢ÒµÎñÂß¼­¶ÔÏó
+ * å®¢æˆ·ä¿¡æ¯ä¸šåŠ¡é€»è¾‘å¯¹è±¡
  * 
  * @author tenanty
  * 
@@ -26,43 +26,43 @@ public class CustomerService {
 	private CustomerDao customerDao;
 	
 	/**
-	 * »ñÈ¡ËùÓĞ¿Í»§×ÊÁÏ
+	 * è·å–æ‰€æœ‰å®¢æˆ·èµ„æ–™
 	 * @return
 	 */
 	public Iterable<Customer> getAllCustomer(){
-		logger.debug("½øÈë CustInfoService.findCustInfoById()");
+		logger.debug("è¿›å…¥ CustInfoService.findCustInfoById()");
 		return customerDao.findAll();
 	}
 
 	/**
-	 * Í¨¹ıOID»ñÈ¡¿Í»§ĞÅÏ¢
+	 * é€šè¿‡OIDè·å–å®¢æˆ·ä¿¡æ¯
 	 * 
 	 * @param custId
 	 * @return
 	 */
 	public Customer findCustInfoById(Long custId) {
-		logger.debug("½øÈë CustInfoService.findCustInfoById()");
+		logger.debug("è¿›å…¥ CustInfoService.findCustInfoById()");
 		Customer custInfo = customerDao.findOne(custId);
 		if (custInfo == null) {
-			throw new ObjectNotExistException("¿Í»§ĞÅÏ¢");
+			throw new ObjectNotExistException("å®¢æˆ·ä¿¡æ¯");
 		}
 		return custInfo;
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨±àºÅµÄ¿Í»§ĞÅÏ¢
+	 * åˆ é™¤æŒ‡å®šç¼–å·çš„å®¢æˆ·ä¿¡æ¯
 	 * 
 	 * @return
 	 */
 	public void deleteCustInfoById(Long custId) {
-		logger.debug("½øÈë CustInfoService.deleteCustInfoById()");
+		logger.debug("è¿›å…¥ CustInfoService.deleteCustInfoById()");
 		Customer custInfo = new Customer();
 		custInfo.setCustId(custId);
 		customerDao.delete(custInfo);
 	}
 	
 	public List<Customer> findAll(){
-		logger.debug("½øÈë CustInfoService.findAll()");
+		logger.debug("è¿›å…¥ CustInfoService.findAll()");
 		return (List<Customer>) customerDao.findAll();
 	}
 	

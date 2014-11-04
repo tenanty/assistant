@@ -18,7 +18,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
- * 客户信息
+ * 瀹㈡埛淇℃伅
  * 
  * @author tenanty
  * 
@@ -28,24 +28,24 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Customer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long custId;//编号
-	private String custName;//姓名
-	private String custCompany;//公司
-	private String custJob;//职务
-	private String custAddress;//地址
-	private String custPortrait;//头像
-	private String remark;//备注
+	private Long custId;//缂栧彿
+	private String custName;//濮撳悕
+	private String custCompany;//鍏徃
+	private String custJob;//鑱屽姟
+	private String custAddress;//鍦板潃
+	private String custPortrait;//澶村儚
+	private String remark;//澶囨敞
 
-	// 邮箱
+	// 閭
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
 	private Set<Email> emails;
-	// 电话
+	// 鐢佃瘽
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
 	private Set<Phone> phones;
-	// 联络历史
+	// 鑱旂粶鍘嗗彶
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
 	private Set<History> histories;
-	// 标记
+	// 鏍囪
 	@ManyToMany(targetEntity = Tag.class, cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	@JoinTable(name = "cust_tag", joinColumns = { @JoinColumn(name = "cust_id", referencedColumnName = "custId") }, inverseJoinColumns = { @JoinColumn(name = "tag_id", referencedColumnName = "tagId") })
 	private Set<Tag> tags;

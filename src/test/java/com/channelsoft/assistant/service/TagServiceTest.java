@@ -25,9 +25,9 @@ public class TagServiceTest {
 	public void testSaveTag() {
 		Tag tag = new Tag();
 		tag.setCrateTime(new Date());
-		tag.setTagName("�򵥱�ǩ");
+		tag.setTagName("简单标签");
 		tag = tagService.saveTag(tag);
-		Assert.assertEquals("�򵥱�ǩ", tag.getTagName());
+		Assert.assertEquals("简单标签", tag.getTagName());
 	}
 
 	@Test

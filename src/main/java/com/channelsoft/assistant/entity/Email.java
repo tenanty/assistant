@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
- * ÓÊ¼şĞÅÏ¢
+ * é‚®ä»¶ä¿¡æ¯
  * 
  * @author tenanty
  * 

@@ -13,7 +13,7 @@ public class ScheduleController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String schedule() {
-		logger.debug("½øÈë ScheduleController.schedule()");
+		logger.debug("è¿›å…¥ ScheduleController.schedule()");
 		return "business/schedule";
 	}
 }

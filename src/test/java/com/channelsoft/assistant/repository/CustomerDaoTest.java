@@ -22,20 +22,20 @@ public class CustomerDaoTest {
 	@Test
 	public void testCustInfoAdd() {
 		Customer custInfo = new Customer();
-		custInfo.setCustName("张三");
+		custInfo.setCustName("寮犱笁");
 		custInfoDao.save(custInfo);
 	}
 
 	@Test
 	public void testCustInfoDelete() {
 		Customer custInfo = new Customer();
-		custInfo.setCustName("张三");
+		custInfo.setCustName("寮犱笁");
 		// custInfoDao.delete(custInfo);
 	}
 
 	@Test
 	public void testDeleteCustNameByCustName() {
-		// custInfoDao.deleteByCustName("张三");
+		// custInfoDao.deleteByCustName("寮犱笁");
 	}
 
 	@Test
@@ -51,7 +51,7 @@ public class CustomerDaoTest {
 
 	// @Test
 	// public void testFindCustInfo(){
-	// List<CustInfo> list = custInfoDao.findByCustName("张三");
+	// List<CustInfo> list = custInfoDao.findByCustName("寮犱笁");
 	// for(CustInfo cust:list){
 	// System.out.println(cust);
 	// }
@@ -61,7 +61,7 @@ public class CustomerDaoTest {
 	// public Predicate toPredicate(Root<CustInfo> root, CriteriaQuery<?> query,
 	// CriteriaBuilder cb) {
 	//
-	// return cb.createquery.equal(root.get( " custName " ), "张三" );
+	// return cb.createquery.equal(root.get( " custName " ), "寮犱笁" );
 	// }
 	// });
 	// for(CustInfo custInfo:list2){

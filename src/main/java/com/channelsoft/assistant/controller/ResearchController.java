@@ -14,7 +14,7 @@ public class ResearchController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String research() {
-		logger.debug("½øÈë ResearchController.research()");
+		logger.debug("è¿›å…¥ ResearchController.research()");
 		return "business/research";
 	}
 }

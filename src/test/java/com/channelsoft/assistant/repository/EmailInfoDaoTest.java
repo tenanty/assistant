@@ -23,7 +23,7 @@ public class EmailInfoDaoTest {
 
 	@Before
 	public void validateEmailInfoExist() {
-		// ³õÊ¼»¯²âÊÔÊı¾İ
+		// åˆå§‹åŒ–æµ‹è¯•æ•°æ®
 
 		boolean exist = emailInfoDao.exists(new Long(1));
 		boolean custExist = custInfoDao.exists(new Long(14));
@@ -47,7 +47,7 @@ public class EmailInfoDaoTest {
 	@Test
 	@Ignore
 	public void testUpdateEmailInfoDescById() {
-		emailInfoDao.updateEmailInfoDescById("¹¤×÷1", new Long(1));
+		emailInfoDao.updateEmailInfoDescById("å·¥ä½œ1", new Long(1));
 	}
 
 	@Test
@@ -70,7 +70,7 @@ public class EmailInfoDaoTest {
 	public void testSaveEmailInfo() {
 
 		Email email = new Email();
-		email.setEmailDesc("¹«Ë¾ÓÊ¼ş");
+		email.setEmailDesc("å…¬å¸é‚®ä»¶");
 		email.setEmailAddress("yuanshun@channelsoft.com");
 		Customer custInfo = new Customer();
 		custInfo.setCustId(new Long(4));

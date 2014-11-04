@@ -16,7 +16,7 @@ import com.channelsoft.assistant.entity.Account;
 import com.channelsoft.assistant.service.AccountService;
 
 /**
- * ÓÃ»§×¢²áµÄController.
+ * ç”¨æˆ·æ³¨å†Œçš„Controller.
  * 
  * @author tenanty
  */
@@ -31,27 +31,27 @@ public class RegisterController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String registerForm() {
-		logger.debug("½øÈë RegisterController.RegisterController");
+		logger.debug("è¿›å…¥ RegisterController.RegisterController");
 		return "account/register";
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
 	public String register(@Valid Account user, RedirectAttributes redirectAttributes) {
-		logger.debug("½øÈë RegisterController.register");
+		logger.debug("è¿›å…¥ RegisterController.register");
 		accountInfoService.registerUser(user);
-		logger.debug("{}×¢²á³É¹¦.",user);
+		logger.debug("{}æ³¨å†ŒæˆåŠŸ.",user);
 		redirectAttributes.addFlashAttribute("username", user.getAccount());
-		redirectAttributes.addFlashAttribute("message", "×¢²á³É¹¦.");
+		redirectAttributes.addFlashAttribute("message", "æ³¨å†ŒæˆåŠŸ.");
 		return "redirect:/login";
 	}
 
 	/**
-	 * AjaxÇëÇóĞ£ÑéloginNameÊÇ·ñÎ¨Ò»¡£
+	 * Ajaxè¯·æ±‚æ ¡éªŒloginNameæ˜¯å¦å”¯ä¸€ã€‚
 	 */
 	@RequestMapping(value = "checkLoginName")
 	@ResponseBody
 	public String checkLoginName(@RequestParam("loginName") String loginName) {
-		logger.debug("½øÈë RegisterController.checkLoginName");
+		logger.debug("è¿›å…¥ RegisterController.checkLoginName");
 		if (accountInfoService.findUserByLoginName(loginName) == null) {
 			return "true";
 		} else {

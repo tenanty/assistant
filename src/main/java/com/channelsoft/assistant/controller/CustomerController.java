@@ -14,6 +14,11 @@ import com.channelsoft.assistant.controller.to.DatatablesResponse;
 import com.channelsoft.assistant.entity.Customer;
 import com.channelsoft.assistant.service.CustomerService;
 
+/**
+ * 
+ * @author tenanty
+ *
+ */
 @Controller
 public class CustomerController {
 	Logger logger = LoggerFactory.getLogger(getClass());

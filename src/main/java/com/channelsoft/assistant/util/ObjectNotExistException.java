@@ -1,7 +1,7 @@
 package com.channelsoft.assistant.util;
 
 /**
- * ¶ÔÏó²»´æÔÚÒì³£
+ * å¯¹è±¡ä¸å­˜åœ¨å¼‚å¸¸
  * 
  * @author tenanty
  * 

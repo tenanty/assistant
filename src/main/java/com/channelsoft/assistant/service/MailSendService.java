@@ -12,7 +12,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 /**
- * ÓÊ¼ş·¢ËÍÒµÎñ¶ÔÏó
+ * é‚®ä»¶å‘é€ä¸šåŠ¡å¯¹è±¡
  * 
  * @author tenanty
  * 
@@ -26,8 +26,8 @@ public class MailSendService {
 		SimpleMailMessage mail = new SimpleMailMessage();
 		mail.setFrom("qnsoft010@126.com");
 		mail.setTo("yuanshun@channelsoft.com");
-		mail.setSubject(" ²âÊÔspring Mail");
-		mail.setText("hello,java <a href='http://www.baidu.com'>°Ù¶È</a>");
+		mail.setSubject(" æµ‹è¯•spring Mail");
+		mail.setText("hello,java <a href='http://www.baidu.com'>ç™¾åº¦</a>");
 		javaMailSenderImpl.send(mail);
 		return "0";
 	}
@@ -35,7 +35,7 @@ public class MailSendService {
 	public String sendMimeMail() {
 		MimeMessage mimeMessage = javaMailSenderImpl.createMimeMessage();
 		MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, "gbk");
-		// ÉèÖÃÊÕ¼şÈË£¬¼Ä¼şÈË
+		// è®¾ç½®æ”¶ä»¶äººï¼Œå¯„ä»¶äºº
 		try {
 			messageHelper.setTo("yuanshun@channelsoft.com");
 		} catch (MessagingException e) {
@@ -49,16 +49,16 @@ public class MailSendService {
 			e.printStackTrace();
 		}
 		try {
-			messageHelper.setSubject("²âÊÔHTMLÓÊ¼ş£¡");
+			messageHelper.setSubject("æµ‹è¯•HTMLé‚®ä»¶ï¼");
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// true ±íÊ¾Æô¶¯HTML¸ñÊ½µÄÓÊ¼ş
+		// true è¡¨ç¤ºå¯åŠ¨HTMLæ ¼å¼çš„é‚®ä»¶
 		try {
 			messageHelper
 					.setText(
-							"<html><head></head><body><h1>hello!!spring html Mail</h1><a href='http://www.baidu.com'>°Ù¶È</a></body></html>",
+							"<html><head></head><body><h1>hello!!spring html Mail</h1><a href='http://www.baidu.com'>ç™¾åº¦</a></body></html>",
 							true);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
@@ -66,7 +66,7 @@ public class MailSendService {
 		}
 
 		Properties prop = new Properties();
-		prop.put("mail.smtp.auth", "true"); // ½«Õâ¸ö²ÎÊıÉèÎªtrue£¬ÈÃ·şÎñÆ÷½øĞĞÈÏÖ¤,ÈÏÖ¤ÓÃ»§ÃûºÍÃÜÂëÊÇ·ñÕıÈ·
+		prop.put("mail.smtp.auth", "true"); // å°†è¿™ä¸ªå‚æ•°è®¾ä¸ºtrueï¼Œè®©æœåŠ¡å™¨è¿›è¡Œè®¤è¯,è®¤è¯ç”¨æˆ·åå’Œå¯†ç æ˜¯å¦æ­£ç¡®
 		prop.put("mail.smtp.timeout", "25000");
 
 		javaMailSenderImpl.setJavaMailProperties(prop);

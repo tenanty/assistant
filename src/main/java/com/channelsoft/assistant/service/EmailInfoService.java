@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.channelsoft.assistant.repository.EmailInfoDao;
 
 /**
- * 电子邮件业务逻辑对象
+ * 鐢靛瓙閭欢涓氬姟閫昏緫瀵硅薄
  * 
  * @author tenanty
  * 

@@ -15,7 +15,7 @@ public class PhoneInfoDaoTest {
 
 	@Test
 	public void testUpdatePhoneInfoDescById() {
-		Integer result = phoneInfoDao.updatePhoneInfoDescById("�ƶ��绰1", new Long(1));
+		Integer result = phoneInfoDao.updatePhoneInfoDescById("移动电话1", new Long(1));
 		System.out.println("result-testUpdatePhoneInfoDescById:" + result);
 	}
 

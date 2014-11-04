@@ -14,7 +14,7 @@ public class HomeController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String home() {
-		logger.debug("½øÈë HomeController.home()");
+		logger.debug("è¿›å…¥ HomeController.home()");
 		return "business/home";
 	}
 }

@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
- * 电话信息
+ * 鐢佃瘽淇℃伅
  * 
  * @author tenanty
  * 

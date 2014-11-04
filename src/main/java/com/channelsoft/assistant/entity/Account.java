@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.collect.ImmutableList;
 
 /**
- * ÕËºÅĞÅÏ¢
+ * è´¦å·ä¿¡æ¯
  * 
  * @author tenanty
  * 
@@ -32,19 +32,19 @@ public class Account implements Serializable {
 	private static final long serialVersionUID = -707817043323114249L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long accountId;//±àºÅ
-	private String account;//ÕËºÅ
-	private String name;//ĞÕÃû
+	private Long accountId;//ç¼–å·
+	private String account;//è´¦å·
+	private String name;//å§“å
 	@Transient
-	private String plainPassword;//ÃÜÂë--Ò³Ãæ´«Èë
-	private String password;//ÃÜÂë-³Ö¾Ã»¯Ê¹ÓÃ
-	private String salt;//ÃÜÂëÑÎ
-	private Date registerTime;//×¢²áÊ±¼ä
-	private Date activeTime;//¼¤»îÊ±¼ä
-	private Date lastLoginTime;//×îºóÒ»´ÎµÇÂ¼Ê±¼ä
-	private String phone;//ÊÖ»ú
-	private String roles;//½ÇÉ«
-	private String email;//µç×ÓÓÊÏä
+	private String plainPassword;//å¯†ç --é¡µé¢ä¼ å…¥
+	private String password;//å¯†ç -æŒä¹…åŒ–ä½¿ç”¨
+	private String salt;//å¯†ç ç›
+	private Date registerTime;//æ³¨å†Œæ—¶é—´
+	private Date activeTime;//æ¿€æ´»æ—¶é—´
+	private Date lastLoginTime;//æœ€åä¸€æ¬¡ç™»å½•æ—¶é—´
+	private String phone;//æ‰‹æœº
+	private String roles;//è§’è‰²
+	private String email;//ç”µå­é‚®ç®±
 	
 	public String getPhone() {
 		return phone;
@@ -65,7 +65,7 @@ public class Account implements Serializable {
 	@JsonIgnore
 	@Transient
 	public List<String> getRoleList() {
-		// ½ÇÉ«ÁĞ±íÔÚÊı¾İ¿âÖĞÊµ¼ÊÒÔ¶ººÅ·Ö¸ô×Ö·û´®´æ´¢£¬Òò´Ë·µ»Ø²»ÄÜĞŞ¸ÄµÄList.
+		// è§’è‰²åˆ—è¡¨åœ¨æ•°æ®åº“ä¸­å®é™…ä»¥é€—å·åˆ†éš”å­—ç¬¦ä¸²å­˜å‚¨ï¼Œå› æ­¤è¿”å›ä¸èƒ½ä¿®æ”¹çš„List.
 		return ImmutableList.copyOf(StringUtils.split(roles, ","));
 	}
 	
@@ -86,7 +86,7 @@ public class Account implements Serializable {
 		this.plainPassword = plainPassword;
 	}
 
-//	// ±êÇ©
+//	// æ ‡ç­¾
 //	@OneToMany(cascade = CascadeType.ALL, mappedBy = "accountInfo", fetch = FetchType.EAGER)
 //	private Set<Tag> tags;
 

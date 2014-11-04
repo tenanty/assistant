@@ -27,14 +27,14 @@ public class TagController {
 
 	@RequestMapping(value = "/tag", method = RequestMethod.GET)
 	public String settingsTags() {
-		logger.debug("进入 TagController.settingsTags()");
+		logger.debug("杩涘叆 TagController.settingsTags()");
 		return "business/tag";
 	}
 
 	@RequestMapping(value = "/getTag")
 	@ResponseBody
 	public DatatablesResponse<Tag> getAll() {
-		logger.debug("进入 TagController.customer()");
+		logger.debug("杩涘叆 TagController.customer()");
 		DatatablesResponse<Tag> response = new DatatablesResponse<Tag>();
 		List<Tag> data = (List<Tag>) tagService.findAll();
 		response.setData(data);
@@ -43,13 +43,13 @@ public class TagController {
 
 	@RequestMapping(value = "/tag", method = RequestMethod.POST)
 	public void updateTag(@RequestParam("data[tagName]")String data,String action) {
-		logger.debug("进入 TagController.updateTag()");
+		logger.debug("杩涘叆 TagController.updateTag()");
 	}
 
 	@RequestMapping(value = "/getCustomerByTag/{id:\\d+}", method = RequestMethod.GET)
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll(@PathVariable("id") Long id) {
-		logger.debug("进入 TagController.customer()");
+		logger.debug("杩涘叆 TagController.customer()");
 		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
 		List<Customer> data = (List<Customer>) tagService
 				.getCustomersByTagId(id);

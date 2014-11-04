@@ -14,14 +14,14 @@ public class Encodes {
 	private static final char[] BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
 
 	/**
-	 * Hex±àÂë.
+	 * Hexç¼–ç .
 	 */
 	public static String encodeHex(byte[] input) {
 		return Hex.encodeHexString(input);
 	}
 
 	/**
-	 * Hex½âÂë.
+	 * Hexè§£ç .
 	 */
 	public static byte[] decodeHex(String input) {
 		try {
@@ -32,28 +32,28 @@ public class Encodes {
 	}
 
 	/**
-	 * Base64±àÂë.
+	 * Base64ç¼–ç .
 	 */
 	public static String encodeBase64(byte[] input) {
 		return Base64.encodeBase64String(input);
 	}
 
 	/**
-	 * Base64±àÂë, URL°²È«(½«Base64ÖĞµÄURL·Ç·¨×Ö·û'+'ºÍ'/'×ªÎª'-'ºÍ'_', ¼ûRFC3548).
+	 * Base64ç¼–ç , URLå®‰å…¨(å°†Base64ä¸­çš„URLéæ³•å­—ç¬¦'+'å’Œ'/'è½¬ä¸º'-'å’Œ'_', è§RFC3548).
 	 */
 	public static String encodeUrlSafeBase64(byte[] input) {
 		return Base64.encodeBase64URLSafeString(input);
 	}
 
 	/**
-	 * Base64½âÂë.
+	 * Base64è§£ç .
 	 */
 	public static byte[] decodeBase64(String input) {
 		return Base64.decodeBase64(input);
 	}
 
 	/**
-	 * Base62±àÂë¡£
+	 * Base62ç¼–ç ã€‚
 	 */
 	public static String encodeBase62(byte[] input) {
 		char[] chars = new char[input.length];
@@ -64,35 +64,35 @@ public class Encodes {
 	}
 
 	/**
-	 * Html ×ªÂë.
+	 * Html è½¬ç .
 	 */
 	public static String escapeHtml(String html) {
 		return StringEscapeUtils.escapeHtml4(html);
 	}
 
 	/**
-	 * Html ½âÂë.
+	 * Html è§£ç .
 	 */
 	public static String unescapeHtml(String htmlEscaped) {
 		return StringEscapeUtils.unescapeHtml4(htmlEscaped);
 	}
 
 	/**
-	 * Xml ×ªÂë.
+	 * Xml è½¬ç .
 	 */
 	public static String escapeXml(String xml) {
 		return StringEscapeUtils.escapeXml(xml);
 	}
 
 	/**
-	 * Xml ½âÂë.
+	 * Xml è§£ç .
 	 */
 	public static String unescapeXml(String xmlEscaped) {
 		return StringEscapeUtils.unescapeXml(xmlEscaped);
 	}
 
 	/**
-	 * URL ±àÂë, EncodeÄ¬ÈÏÎªUTF-8.
+	 * URL ç¼–ç , Encodeé»˜è®¤ä¸ºUTF-8.
 	 */
 	public static String urlEncode(String part) {
 		try {
@@ -103,7 +103,7 @@ public class Encodes {
 	}
 
 	/**
-	 * URL ½âÂë, EncodeÄ¬ÈÏÎªUTF-8.
+	 * URL è§£ç , Encodeé»˜è®¤ä¸ºUTF-8.
 	 */
 	public static String urlDecode(String part) {
 

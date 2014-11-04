@@ -18,7 +18,7 @@ public class HistoryInfoDaoTest {
 		// HistoryInfo history = new HistoryInfo();
 		// CustInfo custInfo = new CustInfo();
 		// custInfo.setCustId(new Long(1));
-		// history.setRemark("ÁªÂçÀúÊ·001");
+		// history.setRemark("è”ç»œåŽ†å²001");
 		// history.setCustInfo(custInfo);
 		// historyInfoDao.save(history);
 	}

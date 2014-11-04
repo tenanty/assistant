@@ -22,13 +22,13 @@ public class Hibernates {
 	}
 
 	/**
-	 * ´ÓDataSoureÖĞÈ¡³öconnection, ¸ù¾İconnectionµÄmetadataÖĞµÄjdbcUrlÅĞ¶ÏDialectÀàĞÍ.
-	 * ½öÖ§³ÖOracle, H2, MySql£¬ÈçĞè¸ü¶àÊı¾İ¿âÀàĞÍ£¬Çë·ÂÕÕ´ËÀà×ÔĞĞ±àĞ´¡£
+	 * ä»DataSoureä¸­å–å‡ºconnection, æ ¹æ®connectionçš„metadataä¸­çš„jdbcUrlåˆ¤æ–­Dialectç±»å‹.
+	 * ä»…æ”¯æŒOracle, H2, MySqlï¼Œå¦‚éœ€æ›´å¤šæ•°æ®åº“ç±»å‹ï¼Œè¯·ä»¿ç…§æ­¤ç±»è‡ªè¡Œç¼–å†™ã€‚
 	 */
 	public static String getDialect(DataSource dataSource) {
 		String jdbcUrl = getJdbcUrlFromDataSource(dataSource);
 
-		// ¸ù¾İjdbc urlÅĞ¶Ïdialect
+		// æ ¹æ®jdbc urlåˆ¤æ–­dialect
 		if (StringUtils.contains(jdbcUrl, ":h2:")) {
 			return H2Dialect.class.getName();
 		} else if (StringUtils.contains(jdbcUrl, ":mysql:")) {

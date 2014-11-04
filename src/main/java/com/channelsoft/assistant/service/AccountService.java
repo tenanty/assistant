@@ -11,7 +11,7 @@ import com.channelsoft.assistant.util.Digests;
 import com.channelsoft.assistant.util.Encodes;
 
 /**
- * ÕË»§ĞÅÏ¢ÒµÎñÂß¼­
+ * è´¦æˆ·ä¿¡æ¯ä¸šåŠ¡é€»è¾‘
  * @author tenanty
  *
  */
@@ -27,7 +27,7 @@ public class AccountService {
 	private AccountDao accountInfoDao;
 
 	/**
-	 * ÓÃ»§×¢²á
+	 * ç”¨æˆ·æ³¨å†Œ
 	 * @param user
 	 */
 	public void registerUser(Account user) {
@@ -38,7 +38,7 @@ public class AccountService {
 	}
 	
 	/**
-	 * Í¨¹ıÕËºÅ»ñÈ¡ÕË»§ĞÅÏ¢
+	 * é€šè¿‡è´¦å·è·å–è´¦æˆ·ä¿¡æ¯
 	 * @param username
 	 * @return
 	 */
@@ -47,7 +47,7 @@ public class AccountService {
 	}
 	
 	/**
-	 * Éè¶¨°²È«µÄÃÜÂë£¬Éú³ÉËæ»úµÄsalt²¢¾­¹ı1024´Î sha-1 hash
+	 * è®¾å®šå®‰å…¨çš„å¯†ç ï¼Œç”Ÿæˆéšæœºçš„saltå¹¶ç»è¿‡1024æ¬¡ sha-1 hash
 	 */
 	private void entryptPassword(Account user) {
 		byte[] salt = Digests.generateSalt(SALT_SIZE);
@@ -58,7 +58,7 @@ public class AccountService {
 	}
 
 	/**
-	 * Í¨¹ıÕËºÅ»ñÈ¡ÓÃ»§ĞÅÏ¢
+	 * é€šè¿‡è´¦å·è·å–ç”¨æˆ·ä¿¡æ¯
 	 * @param loginName
 	 * @return
 	 */

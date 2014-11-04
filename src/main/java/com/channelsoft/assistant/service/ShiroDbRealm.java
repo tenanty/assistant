@@ -48,11 +48,11 @@ public class ShiroDbRealm extends AuthorizingRealm {
 	protected AccountService accountService;
 
 	/**
-	 * ÈÏÖ¤»Øµ÷º¯Êı,µÇÂ¼Ê±µ÷ÓÃ.
+	 * è®¤è¯å›è°ƒå‡½æ•°,ç™»å½•æ—¶è°ƒç”¨.
 	 */
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authcToken) throws AuthenticationException {
-		logger.debug("½øÈë ShiroDbRealm.doGetAuthenticationInfo()");
+		logger.debug("è¿›å…¥ ShiroDbRealm.doGetAuthenticationInfo()");
 		UsernamePasswordToken token = (UsernamePasswordToken) authcToken;
 		Account user = accountService.findAccountInfoByAccount(token.getUsername());
 		if (user != null) {
@@ -65,11 +65,11 @@ public class ShiroDbRealm extends AuthorizingRealm {
 	}
 
 	/**
-	 * ÊÚÈ¨²éÑ¯»Øµ÷º¯Êı, ½øĞĞ¼øÈ¨µ«»º´æÖĞÎŞÓÃ»§µÄÊÚÈ¨ĞÅÏ¢Ê±µ÷ÓÃ.
+	 * æˆæƒæŸ¥è¯¢å›è°ƒå‡½æ•°, è¿›è¡Œé‰´æƒä½†ç¼“å­˜ä¸­æ— ç”¨æˆ·çš„æˆæƒä¿¡æ¯æ—¶è°ƒç”¨.
 	 */
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-		logger.debug("½øÈë ShiroDbRealm.doGetAuthorizationInfo()");
+		logger.debug("è¿›å…¥ ShiroDbRealm.doGetAuthorizationInfo()");
 		ShiroUser shiroUser = (ShiroUser) principals.getPrimaryPrincipal();
 		Account user = accountService.findAccountInfoByAccount(shiroUser.loginName);
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
@@ -78,11 +78,11 @@ public class ShiroDbRealm extends AuthorizingRealm {
 	}
 
 	/**
-	 * Éè¶¨PasswordĞ£ÑéµÄHashËã·¨Óëµü´ú´ÎÊı.
+	 * è®¾å®šPasswordæ ¡éªŒçš„Hashç®—æ³•ä¸è¿­ä»£æ¬¡æ•°.
 	 */
 	@PostConstruct
 	public void initCredentialsMatcher() {
-		logger.debug("½øÈë ShiroDbRealm.initCredentialsMatcher()");
+		logger.debug("è¿›å…¥ ShiroDbRealm.initCredentialsMatcher()");
 		HashedCredentialsMatcher matcher = new HashedCredentialsMatcher(AccountService.HASH_ALGORITHM);
 		matcher.setHashIterations(AccountService.HASH_INTERATIONS);
 
@@ -91,12 +91,12 @@ public class ShiroDbRealm extends AuthorizingRealm {
 
 	@Autowired
 	public void setAccountService(AccountService accountInfoService) {
-		logger.debug("½øÈë ShiroDbRealm.setAccountInfoService()");
+		logger.debug("è¿›å…¥ ShiroDbRealm.setAccountInfoService()");
 		this.accountService = accountInfoService;
 	}
 
 	/**
-	 * ×Ô¶¨ÒåAuthentication¶ÔÏó£¬Ê¹µÃSubject³ıÁËĞ¯´øÓÃ»§µÄµÇÂ¼ÃûÍâ»¹¿ÉÒÔĞ¯´ø¸ü¶àĞÅÏ¢.
+	 * è‡ªå®šä¹‰Authenticationå¯¹è±¡ï¼Œä½¿å¾—Subjecté™¤äº†æºå¸¦ç”¨æˆ·çš„ç™»å½•åå¤–è¿˜å¯ä»¥æºå¸¦æ›´å¤šä¿¡æ¯.
 	 */
 	public static class ShiroUser implements Serializable {
 		private static final long serialVersionUID = -1373760761780840081L;
@@ -115,7 +115,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
 		}
 
 		/**
-		 * ±¾º¯ÊıÊä³ö½«×÷ÎªÄ¬ÈÏµÄ<shiro:principal/>Êä³ö.
+		 * æœ¬å‡½æ•°è¾“å‡ºå°†ä½œä¸ºé»˜è®¤çš„<shiro:principal/>è¾“å‡º.
 		 */
 		@Override
 		public String toString() {
@@ -123,7 +123,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
 		}
 
 		/**
-		 * ÖØÔØhashCode,Ö»¼ÆËãloginName;
+		 * é‡è½½hashCode,åªè®¡ç®—loginName;
 		 */
 		@Override
 		public int hashCode() {
@@ -131,7 +131,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
 		}
 
 		/**
-		 * ÖØÔØequals,Ö»¼ÆËãloginName;
+		 * é‡è½½equals,åªè®¡ç®—loginName;
 		 */
 		@Override
 		public boolean equals(Object obj) {

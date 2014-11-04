@@ -12,7 +12,7 @@ import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * 自定义异常处理类
+ * 鑷畾涔夊紓甯稿鐞嗙被
  * 
  * @author tenanty
  *
@@ -23,7 +23,7 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 
 	public ModelAndView resolveException(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex) {
-		logger.debug("进入 MyExceptionHandler.resolveException()");
+		logger.debug("杩涘叆 MyExceptionHandler.resolveException()");
 		 Map<String, Object> model = new HashMap<String, Object>();  
 	        model.put("ex", ex);  
 	            return new ModelAndView("error", model);  

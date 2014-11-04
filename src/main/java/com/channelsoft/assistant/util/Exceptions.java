@@ -4,16 +4,16 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * ¹ØÓÚÒì³£µÄ¹¤¾ßÀà.
+ * å…³äºå¼‚å¸¸çš„å·¥å…·ç±».
  * 
- * ²Î¿¼ÁËguavaµÄThrowables¡£
+ * å‚è€ƒäº†guavaçš„Throwablesã€‚
  * 
  * @author calvin
  */
 public class Exceptions {
 
 	/**
-	 * ½«CheckedException×ª»»ÎªUncheckedException.
+	 * å°†CheckedExceptionè½¬æ¢ä¸ºUncheckedException.
 	 */
 	public static RuntimeException unchecked(Throwable ex) {
 		if (ex instanceof RuntimeException) {
@@ -24,7 +24,7 @@ public class Exceptions {
 	}
 
 	/**
-	 * ½«ErrorStack×ª»¯ÎªString.
+	 * å°†ErrorStackè½¬åŒ–ä¸ºString.
 	 */
 	public static String getStackTraceAsString(Throwable ex) {
 		StringWriter stringWriter = new StringWriter();
@@ -33,7 +33,7 @@ public class Exceptions {
 	}
 
 	/**
-	 * »ñÈ¡×éºÏ±¾Òì³£ĞÅÏ¢Óëµ×²ãÒì³£ĞÅÏ¢µÄÒì³£ÃèÊö, ÊÊÓÃÓÚ±¾Òì³£ÎªÍ³Ò»°ü×°Òì³£Àà£¬µ×²ãÒì³£²ÅÊÇ¸ù±¾Ô­ÒòµÄÇé¿ö¡£
+	 * è·å–ç»„åˆæœ¬å¼‚å¸¸ä¿¡æ¯ä¸åº•å±‚å¼‚å¸¸ä¿¡æ¯çš„å¼‚å¸¸æè¿°, é€‚ç”¨äºæœ¬å¼‚å¸¸ä¸ºç»Ÿä¸€åŒ…è£…å¼‚å¸¸ç±»ï¼Œåº•å±‚å¼‚å¸¸æ‰æ˜¯æ ¹æœ¬åŸå› çš„æƒ…å†µã€‚
 	 */
 	public static String getErrorMessageWithNestedException(Throwable ex) {
 		Throwable nestedException = ex.getCause();
@@ -43,7 +43,7 @@ public class Exceptions {
 	}
 
 	/**
-	 * »ñÈ¡Òì³£µÄRoot Cause.
+	 * è·å–å¼‚å¸¸çš„Root Cause.
 	 */
 	public static Throwable getRootCause(Throwable ex) {
 		Throwable cause;
@@ -54,7 +54,7 @@ public class Exceptions {
 	}
 
 	/**
-	 * ÅĞ¶ÏÒì³£ÊÇ·ñÓÉÄ³Ğ©µ×²ãµÄÒì³£ÒıÆğ.
+	 * åˆ¤æ–­å¼‚å¸¸æ˜¯å¦ç”±æŸäº›åº•å±‚çš„å¼‚å¸¸å¼•èµ·.
 	 */
 	public static boolean isCausedBy(Exception ex, Class<? extends Exception>... causeExceptionClasses) {
 		Throwable cause = ex;

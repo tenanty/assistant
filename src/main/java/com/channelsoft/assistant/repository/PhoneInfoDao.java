@@ -11,7 +11,7 @@ import com.channelsoft.assistant.entity.Phone;
 
 public interface PhoneInfoDao extends PagingAndSortingRepository<Phone, Long> {
 	/**
-	 * 更新电话描述
+	 * 鏇存柊鐢佃瘽鎻忚堪
 	 * 
 	 * @param emailDesc
 	 * @param emailId
@@ -22,7 +22,7 @@ public interface PhoneInfoDao extends PagingAndSortingRepository<Phone, Long> {
 	public Integer updatePhoneInfoDescById(@Param("phoneDesc") String phoneDesc, @Param("phoneId") Long phoneId);
 
 	/**
-	 * 更新电话号码
+	 * 鏇存柊鐢佃瘽鍙风爜
 	 * 
 	 * @param emailDesc
 	 * @param emailId

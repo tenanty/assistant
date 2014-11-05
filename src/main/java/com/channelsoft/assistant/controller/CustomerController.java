@@ -20,21 +20,32 @@ import com.channelsoft.assistant.service.CustomerService;
  *
  */
 @Controller
+@RequestMapping(value = "/customer")
 public class CustomerController {
 	Logger logger = LoggerFactory.getLogger(getClass());
 	@Autowired
 	private CustomerService customerService;
 
-	@RequestMapping(value = "/customer", method = RequestMethod.GET)
-	public String customer() {
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	public String list() {
 		logger.debug("进入 CustomerController.customer()");
 		return "business/customer";
 	}
 
-	@RequestMapping(value = "/getCustomer", method = RequestMethod.GET)
+	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll() {
-		logger.debug("进入 CustomerController.customer()");
+		logger.debug("进入 CustomerController.getAll()");
+		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
+		List<Customer> data = (List<Customer>) customerService.getAllCustomer();
+		response.setData(data);
+		return response;
+	}
+
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	@ResponseBody
+	public DatatablesResponse<Customer> add() {
+		logger.debug("进入 CustomerController.add()");
 		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
 		List<Customer> data = (List<Customer>) customerService.getAllCustomer();
 		response.setData(data);

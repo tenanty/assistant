@@ -22,55 +22,131 @@
 <script type="text/javascript"
 	src="${ctx}/static/datatables/media/js/jquery.js"></script>
 <script type="text/javascript"
+	src="${ctx}/static/flatui/dist/js/flat-ui-pro.min.js"></script>
+<script type="text/javascript"
 	src="${ctx}/static/datatables/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="${ctx}/static/customer/qframe.js"></script>
+
 <script type="text/javascript">
-	$(document).ready(function() {
+	$(document)
+			.ready(
+					function() {
+						//标签字段增加
+						$('input.tagsinput').tagsinput();
+						//增加点击事件
+						$("#example tbody tr").click(
+								function(e) {
+									if ($(this).hasClass('row_selected')) {
+										$(this).removeClass('row_selected');
+									} else {
+										oTable.$('tr.row_selected')
+												.removeClass('row_selected');
+										$(this).addClass('row_selected');
+									}
+								});
+						var giCount = 2;
+						var oTable = jQuery('#example')
+								.DataTable(
+										{
+											sAjaxSource : "${ctx}/data/1.json",
+											bDeferRender : true,
+											deferRender : true,//快速删除搜索条中内容
+											filter : true,//控制是否对表格数据进行过滤,设置为false时将不出现查询输入框,默认为true
+											aoColumns : [
+													{
+														"title" : "客户编号",
+														"data" : "extn",
+														"visible" : false
+													},
+													{
+														"title" : "客户名",
+														"data" : "name"
+													},
+													{
+														"title" : "公司",
+														"data" : "position"
+													},
+													{
+														"title" : "职务",
+														"data" : "start_date"
+													},
+													{
+														"title" : "地址",
+														"data" : "salary"
+													},
+													{
+														"title" : "操作",
+														"data" : null,
+														"mRender" : function(
+																data, type,
+																full) {
+															var render = "<button  onclick=a('/admin/Article/edit?Id="
+																	+ data.salary
+																	+ "') class='update'>a</button>";
+															render += "<button  onclick=d('/admin/Article/edit?Id="
+																	+ data.salary
+																	+ "') class='delete'>b</button>";
+															return render;
+														},
+														"width" : "10%",
+														"sortable" : false
+													} ]
+										});
+
+						jQuery('#closeButton').click(function() {
+							console.log("closeButton...");
+							$("#myModal").modal('hide');
+						});
+						
+						jQuery('#saveButton').click(function() {
+							console.log("saveButton...");
+							$("#myModal").modal('hide');
+						});
+					});
+	//修改逻辑
+	function a(p) {
 		
-		$("#example tbody tr").click( function( e ) {
-	        if ( $(this).hasClass('row_selected') ) {
-	            $(this).removeClass('row_selected');
-	        }
-	        else {
-	            oTable.$('tr.row_selected').removeClass('row_selected');
-	            $(this).addClass('row_selected');
-	        }
-	    });
+		var phone = '';
+		$("input[name='phones']").each(  
+				function(){  
+					phone += $(this).val()+","
+					console.log("#phone:"+$(this).val());  
+				}  
+		); 
+		var email = '';
+		$("input[name='emails']").each(  
+				function(){  
+					email += $(this).val()+","
+					console.log("#email:"+$(this).val());  
+				}  
+		); 
+		$("#phone").val(phone);
+		$("#email").val(email);
 		
-		var giCount = 2;
-		var oTable = jQuery('#example').DataTable({
-			sAjaxSource : "${ctx}/data/1.json",
-			bDeferRender:true,
-			deferRender : true,//快速删除搜索条中内容
-			bFilter: false,//控制是否对表格数据进行过滤,设置为false时将不出现查询输入框,默认为true
-			aoColumns : [ {
-				"sTitle" : "客户名",
-				"mData" : "name",
-				"bVisible": false
-			}, {
-				"sTitle" : "公司",
-				"mData" : "position"
-			}, {
-				"sTitle" : "职务",
-				"mData" : "start_date"
-			}, {
-				"sTitle" : "地址",
-				"mData" : "salary"
-			} ]
-		});
+		console.log(p);
+		console.log($("#myForm").serializeArray());//将form表单中的表单输入元素中的name组成为对象数组如：[{"name":"name","value":"1"},{"name":"name2","value":"2"}]
+		console.log($("#myForm").serializeObject());
 		
-		jQuery('#myButton').click(function(){
-			console.log(oTable.$('tr.row_selected'));
-			jQuery('#example').DataTable().row.add(
-				{"name": giCount +'.1',
-				 "position": giCount +'.2',
-				 "salary": giCount +'.3',
-				 "start_date": giCount +'.4',
-				 "office": giCount +'.5',
-				 "extn": "5421"
-				}).draw();
-			giCount ++;
-		});
-	});
+		//$('#myForm')[0].reset();
+	}
+	
+	function addphone(){
+		$("#phonelist").append('<div>移动电话1<span class="fui-cross" onclick="deletePhone(this);"></span><input type="text" class="form-control input-sm" name="phones" placeholder="移动电话" /></div>');
+		}
+	
+	function addemail(){
+		$("#emaillist").append('<div>电子邮箱1<span class="fui-cross" onclick="deleteEmail(this);"></span><input type="text" class="form-control input-sm" name="emails" placeholder="电子邮箱1" /></div>');
+	}
+	function deleteEmail(a){
+		if(confirm("确定要删除电子邮箱？")){
+			a.parentNode.remove();	
+		}
+	}
+	function deletePhone(a){
+		if(confirm("确定要删除电话？")){
+			a.parentNode.remove();	
+		}
+	}
 </script>
 <link href="${ctx}/static/datatables/media/css/jquery.dataTables.css"
 	type="text/css" rel="stylesheet" />
@@ -89,62 +165,142 @@ li {
 
 	<!-- Static navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-				</button>
-				<a class="navbar-brand" href="${ctx }/home">xxxxxxxxxx</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="${ctx }/customer">客户管理</a></li>
-					<li><a href="${ctx }/schedule">日程</a></li>
-					<li><a href="${ctx }/history">联络历史</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">设置 <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="${ctx }/tag">联系人标签</a></li>
-						</ul></li>
-				</ul>
-				<form class="navbar-form navbar-left" action="${ctx }/research"
-					role="search">
-					<div class="form-group">
-						<div class="input-group">
-							<input class="form-control" id="navbarInput-01" type="search"
-								placeholder="Search" /> <span class="input-group-btn"> <a
-								id="research" type="submit" class="btn"> <span
-									class="fui-search"></span>
-							</a>
-							</span>
-						</div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="${ctx }/home">xxxxxxxxxx</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="${ctx }/customer">客户管理</a></li>
+				<li><a href="${ctx }/schedule">日程</a></li>
+				<li><a href="${ctx }/history">联络历史</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">设置 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="${ctx }/tag">联系人标签</a></li>
+					</ul></li>
+			</ul>
+			<form class="navbar-form navbar-left" action="${ctx }/research"
+				role="search">
+				<div class="form-group">
+					<div class="input-group">
+						<input class="form-control" name="search" id="navbarInput-01"
+							type="search" placeholder="Search" /> <span
+							class="input-group-btn"> <a id="research" type="submit"
+							class="btn"> <span class="fui-search"></span>
+						</a>
+						</span>
 					</div>
-				</form>
-				<button id="logout" class="btn btn-primary navbar-btn navbar-right">登出</button>
+				</div>
+			</form>
+			<button id="logout" class="btn btn-primary navbar-btn navbar-right">登出</button>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+
+	<table id="example" class="row-border" cellspacing="0" width="100%">
+	</table>
+	<!-- Button trigger modal -->
+	<button class="btn btn-primary btn-lg" data-toggle="modal"
+		data-target="#myModal">添加</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close fui-cross" data-dismiss="modal"
+						aria-hidden="true"></button>
+					<h4 class="modal-title" id="myModalLabel">添加客户资料</h4>
+				</div>
+				<div class="modal-body">
+					<form id="myForm" action="#">
+					<input type="hidden" id="phone" name="phone">
+					<input type="hidden" id="email" name="email">
+						<div class="row">
+							<!-- <div class="col-md-4 text-center">
+								添加头像:
+								<div class="form-group">
+									<div class="fileinput fileinput-new" data-provides="fileinput">
+										<div class="fileinput-preview thumbnail"
+											data-trigger="fileinput" style="width: 100px; height: 75px;"></div>
+										<div>
+											<span class="btn btn-primary btn-embossed btn-file"> <span
+												class="fileinput-new"><span class="fui-image"></span>&nbsp;&nbsp;选择头像</span>
+												<span class="fileinput-exists"><span class="fui-gear"></span>&nbsp;&nbsp;</span>
+												<input id="custPortrait" type="file" name="custPortrait">
+											</span> <a href="#"
+												class="btn btn-primary btn-embossed fileinput-exists"
+												data-dismiss="fileinput"><span class="fui-trash"></span>&nbsp;&nbsp;</a>
+										</div>
+									</div>
+								</div>
+								</div> -->
+							<div class="col-md-8">
+								姓名<input type="text" id="custName" class="form-control input-sm"
+									name="custName" placeholder="姓名" /> 公司<input type="text"
+									id="custCompany" class="form-control input-sm"
+									name="custCompany" placeholder="公司" /> 职务<input type="text"
+									id="custJob" class="form-control input-sm" name="custJob"
+									placeholder="职务" /> 地址<input type="text" id="custAddress"
+									class="form-control input-sm" name="custAddress"
+									placeholder="地址" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-6">
+								<div id="phonelist">
+									<div>
+										移动电话<span class="fui-plus" onclick="addphone()"></span><input
+											type="text" class="form-control input-sm" name="phones"
+											placeholder="移动电话" />
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div id="emaillist">
+									<div>
+										电子邮件<span class="fui-plus" onclick="addemail()"></span><input
+											type="text" class="form-control input-sm" name="emails"
+											placeholder="电子邮件" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								客户标签
+								<div class="tagsinput-primary">
+									<input name="tags" class="tagsinput" value="客户" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								备注
+								<div class="tagsinput-primary">
+									<textarea class="form-control" name="remark" rows="3"
+										placeholder="备注"></textarea>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="closeButton" class="btn btn-default">关闭</button>
+					<button type="button" id="saveButton" class="btn btn-primary">保存</button>
+				</div>
 			</div>
-			<!--/.nav-collapse -->
 		</div>
 	</div>
-
-
-	<div class="container">
-		<table id="example" class="row-border" cellspacing="0" width="100%">
-			<thead>
-				<tr>
-					<th>name</th>
-					<th>position</th>
-					<th>start_date</th>
-					<th>salary</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-	<button id="myButton" type="button" value="xxxx">xxxx</button>
 </body>
 </html>
-
-	<%--
+<%--
 	<!-- Static navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">

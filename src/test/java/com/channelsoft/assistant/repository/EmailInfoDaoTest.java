@@ -16,7 +16,7 @@ import com.channelsoft.assistant.entity.Email;
 public class EmailInfoDaoTest {
 
 	@Autowired
-	private EmailInfoDao emailInfoDao;
+	private EmailDao emailInfoDao;
 
 	@Autowired
 	private CustomerDao custInfoDao;
@@ -39,7 +39,7 @@ public class EmailInfoDaoTest {
 			Customer custInfo = new Customer();
 			custInfo.setCustId(new Long(14));
 			emailInfo.setEmailId(new Long(1));
-			emailInfo.setCustInfo(custInfo);
+			emailInfo.setCustomer(custInfo);
 			emailInfoDao.save(emailInfo);
 		}
 	}
@@ -47,7 +47,7 @@ public class EmailInfoDaoTest {
 	@Test
 	@Ignore
 	public void testUpdateEmailInfoDescById() {
-		emailInfoDao.updateEmailInfoDescById("工作1", new Long(1));
+		emailInfoDao.updateEmailDescById("工作1", new Long(1));
 	}
 
 	@Test
@@ -61,7 +61,7 @@ public class EmailInfoDaoTest {
 			emailInfoDao.save(new Email(new Long(1), "1", "2", new Customer(
 					new Long(1), "1", "2", "3", "4", "5", "6")));
 		}
-		emailInfoDao.updateEmailInfoAddressById("yuanshun1@channelsoft.com",
+		emailInfoDao.updateEmailAddressById("yuanshun1@channelsoft.com",
 				new Long(1));
 	}
 
@@ -74,7 +74,7 @@ public class EmailInfoDaoTest {
 		email.setEmailAddress("yuanshun@channelsoft.com");
 		Customer custInfo = new Customer();
 		custInfo.setCustId(new Long(4));
-		email.setCustInfo(custInfo);
+		email.setCustomer(custInfo);
 		emailInfoDao.save(email);
 	}
 }

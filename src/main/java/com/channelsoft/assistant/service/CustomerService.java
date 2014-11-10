@@ -2,6 +2,8 @@ package com.channelsoft.assistant.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,7 @@ import com.channelsoft.assistant.util.ObjectNotExistException;
  * 
  */
 @Service
+@Transactional
 public class CustomerService {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());

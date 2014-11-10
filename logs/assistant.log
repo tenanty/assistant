@@ -174,3 +174,367 @@
 10:50:34.445 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
 10:50:34.446 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=1, custCompany=2, custJob=3, custAddress=4, custPortrait=null, remark=8, emails=null, phones=null]
 10:50:34.446 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+10:57:42.443 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+10:57:42.443 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:01:53.070 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:01:53.316 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:01:54.782 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:01:54.782 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:01:54.794 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:01:54.796 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:01:54.796 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:02:50.430 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:02:50.430 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=元舜, custCompany=青牛（北京）技术有限公司, custJob=软件工程师, custAddress=北京海淀区阜成路124号, custPortrait=null, remark=测试信息, emails=null, phones=null]
+11:02:50.430 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:02:52.977 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:02:53.581 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:02:53.582 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:02:53.591 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:02:53.591 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:02:53.591 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:09:35.203 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:09:35.203 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=张三, custCompany=1234, custJob=1234, custAddress=1234, custPortrait=null, remark=1234, emails=null, phones=null]
+11:09:35.203 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:09:37.427 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:09:37.884 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:09:37.884 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:09:37.892 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:09:37.892 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:09:37.892 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:21:50.554 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:22:13.840 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:22:53.278 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:22:55.992 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:23:45.848 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:24:14.056 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:24:14.663 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:24:14.663 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:24:14.666 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:24:14.667 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:24:14.667 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:24:29.784 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:24:29.784 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=12, custCompany=12, custJob=21, custAddress=2, custPortrait=null, remark=12, emails=null, phones=null]
+11:24:29.784 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:24:31.580 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:24:31.581 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=12, custCompany=12, custJob=21, custAddress=2, custPortrait=null, remark=12, emails=null, phones=null]
+11:24:31.581 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:24:46.864 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:24:46.864 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=12, custCompany=12, custJob=21, custAddress=2, custPortrait=null, remark=12, emails=null, phones=null]
+11:24:46.864 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:25:09.509 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:25:10.009 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:25:10.010 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:25:10.017 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:25:10.017 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:25:10.017 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:25:24.364 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:25:24.364 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=111, custCompany=111, custJob=111, custAddress=111, custPortrait=null, remark=111, emails=null, phones=null]
+11:25:24.364 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:25:37.661 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:25:37.662 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=111, custCompany=111, custJob=111, custAddress=111, custPortrait=null, remark=111, emails=null, phones=null]
+11:25:37.662 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:25:50.409 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:25:50.410 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=1112, custCompany=1112, custJob=1112, custAddress=1112, custPortrait=null, remark=1112, emails=null, phones=null]
+11:25:50.410 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:33:43.625 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:33:44.092 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:33:44.092 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:33:44.102 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:33:44.102 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:33:44.102 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:33:57.729 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:33:57.729 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=123, custCompany=1234, custJob=1234, custAddress=1234, custPortrait=null, remark=aaaaaa, emails=null, phones=null]
+11:33:57.729 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:34:20.029 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:34:20.029 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=a123, custCompany=a1234, custJob=a1234, custAddress=a1234, custPortrait=null, remark=aaaaaa1234, emails=null, phones=null]
+11:34:20.030 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:34:40.216 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:34:40.216 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=ba123, custCompany=ba1234, custJob=ba1234, custAddress=ba1234, custPortrait=null, remark=baaaaa1234, emails=null, phones=null]
+11:34:40.216 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:34:52.138 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:34:52.502 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:34:52.502 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:34:52.506 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:34:52.507 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:34:52.507 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:35:06.350 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:35:06.350 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=bbb, custCompany=bbb, custJob=bbb, custAddress=bbb, custPortrait=null, remark=afdabbb, emails=null, phones=null]
+11:35:06.350 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:37:10.258 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:37:10.752 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:37:10.753 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:37:10.759 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:37:10.760 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:37:10.760 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:37:18.812 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:37:18.812 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=ccc, custCompany=ccc, custJob=ccc, custAddress=ccc, custPortrait=null, remark=ccc, emails=null, phones=null]
+11:37:18.813 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:37:41.840 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:37:41.840 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=dccc, custCompany=dccc, custJob=dccc, custAddress=dccc, custPortrait=null, remark=dccc, emails=null, phones=null]
+11:37:41.840 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:37:53.764 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:37:53.764 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=daaa, custCompany=dccc, custJob=dccc, custAddress=dccc, custPortrait=null, remark=dccc, emails=null, phones=null]
+11:37:53.764 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:38:28.522 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:38:28.734 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:38:28.734 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:38:28.739 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:38:28.739 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:38:28.739 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:38:55.324 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:38:55.324 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=张三, custCompany=测试, custJob=测试, custAddress=北京市海淀区, custPortrait=null, remark=213, emails=null, phones=null]
+11:38:55.324 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:39:15.612 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:39:15.820 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:39:15.821 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:39:15.825 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:39:15.825 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:39:15.825 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:39:45.899 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:39:45.899 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=李四, custCompany=测试, custJob=测试, custAddress=测试, custPortrait=null, remark=1234, emails=null, phones=null]
+11:39:45.899 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:40:38.808 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+11:40:38.809 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+11:40:50.854 [http-bio-9080-exec-2] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+11:40:55.968 [http-bio-9080-exec-3] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+11:40:59.799 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:41:00.173 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:41:00.174 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:41:00.221 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:41:00.222 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:41:00.224 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:41:15.167 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:41:15.168 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=王五, custCompany=1, custJob=1, custAddress=1, custPortrait=null, remark=1, emails=null, phones=null]
+11:41:15.168 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:41:52.074 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:41:52.460 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:41:52.461 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:41:52.476 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:41:52.477 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:41:52.477 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:42:58.439 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:42:58.757 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:42:58.757 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:42:58.764 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:42:58.764 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:42:58.765 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:43:10.645 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:43:10.884 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:43:10.885 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:43:10.890 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:43:10.891 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:43:10.891 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:43:43.107 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:43:43.440 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:43:43.441 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:43:43.447 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:43:43.447 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=, custCompany=, custJob=, custAddress=, custPortrait=null, remark=, emails=null, phones=null]
+11:43:43.447 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:44:10.141 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:44:11.531 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:44:11.532 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:44:12.528 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:44:12.708 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:44:12.708 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:44:14.748 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:44:14.942 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:44:14.942 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:44:15.788 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:44:15.970 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:44:15.970 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:44:20.179 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:44:20.412 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:44:20.413 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:44:31.904 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:44:31.904 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=阿牛, custCompany=123, custJob=123, custAddress=123, custPortrait=null, remark=123, emails=null, phones=null]
+11:44:31.904 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+11:56:44.995 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+11:56:44.995 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+11:56:47.207 [http-bio-9080-exec-7] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+11:56:51.866 [http-bio-9080-exec-9] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+11:56:52.031 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:56:53.665 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:56:53.665 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+11:57:47.780 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+11:57:48.405 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=仙草, custCompany=测试, custJob=测试, custAddress=测试, custPortrait=null, remark=1234测试, emails=null, phones=null]
+13:37:38.028 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+13:37:38.028 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+13:37:49.225 [http-bio-9080-exec-7] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:37:54.025 [http-bio-9080-exec-8] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:37:54.284 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:37:54.559 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:37:54.559 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+13:38:13.229 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:38:13.579 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=xxxx, custCompany=xxxx, custJob=xxxx, custAddress=xxxx, custPortrait=null, remark=4444, emails=null, phones=null]
+13:38:35.538 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:38:35.930 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=xxxx, custCompany=xxxx, custJob=xxxx, custAddress=xxxx, custPortrait=null, remark=4444, emails=null, phones=null]
+13:40:03.255 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+13:40:03.255 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+13:41:02.606 [http-bio-9080-exec-2] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:41:04.686 [http-bio-9080-exec-9] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:41:08.414 [http-bio-9080-exec-8] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:41:08.559 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:41:08.788 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:41:08.789 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+13:41:23.937 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:41:24.526 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=xxxxx, custCompany=xxxxx, custJob=xxxxxx, custAddress=xxxxxx, custPortrait=null, remark=1234, emails=null, phones=null]
+13:41:48.001 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+13:41:48.471 [http-bio-9080-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+13:41:48.477 [http-bio-9080-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+13:48:46.219 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+13:48:46.220 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+13:48:48.637 [http-bio-9080-exec-7] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:48:52.564 [http-bio-9080-exec-6] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:48:52.731 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:48:52.949 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:48:52.950 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+13:49:04.741 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:49:04.935 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=xxxx, custCompany=xxx, custJob=xxxx, custAddress=xxx, custPortrait=null, remark=xxxx, emails=null, phones=null]
+13:49:06.237 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+13:51:20.450 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+13:51:20.451 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+13:51:32.555 [http-bio-9080-exec-7] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:51:36.058 [http-bio-9080-exec-6] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:51:36.220 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:51:36.494 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:51:36.495 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+13:51:53.732 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:51:53.965 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=yyyyyy, custCompany=yyyyyy, custJob=yyyyyy, custAddress=yyyyyy, custPortrait=null, remark=yyyyyy, emails=null, phones=null]
+13:52:05.797 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+13:52:06.142 [http-bio-9080-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+13:52:06.147 [http-bio-9080-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+13:58:39.542 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+13:58:39.543 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+13:58:41.727 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:58:45.917 [http-bio-9080-exec-9] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:58:46.078 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:58:46.364 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:58:46.364 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+13:58:59.041 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+13:58:59.258 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=yyyy, custCompany=yyyy, custJob=yyy, custAddress=yyyy, custPortrait=null, remark=yyyy, emails=null, phones=null]
+13:59:00.665 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+13:59:01.010 [http-bio-9080-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+13:59:01.015 [http-bio-9080-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+14:57:58.203 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+14:57:58.204 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+15:02:01.768 [http-bio-9080-exec-5] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+15:02:06.270 [http-bio-9080-exec-8] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+15:02:06.429 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:02:06.752 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:02:06.752 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+15:02:21.168 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+15:02:21.472 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=yyyyy, custCompany=yyyyy, custJob=yyyyy, custAddress=yyyyy, custPortrait=null, remark=yyyy, emails=null, phones=null]
+15:02:23.355 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.save()
+15:02:23.717 [http-bio-9080-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+15:02:23.722 [http-bio-9080-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+15:02:36.257 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:02:36.478 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:02:36.478 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustInfoService.findCustInfoById()
+15:05:10.392 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.findCustInfoById()
+15:05:10.460 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:05:10.625 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.deleteCustInfoById()
+15:17:53.211 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:18:25.904 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:19:05.615 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:20:22.951 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:21:52.055 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:21:53.967 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:21:54.115 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+15:21:54.117 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+15:23:33.374 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:23:36.390 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:24:40.269 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:36:33.675 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:37:02.994 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:39:31.004 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:44:52.457 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:44:54.568 [main] DEBUG c.c.assistant.service.EmailService - 杩涘叆 EmailService.save()
+15:45:55.333 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:46:06.055 [main] DEBUG c.c.assistant.service.EmailService - 杩涘叆 EmailService.save()
+15:51:44.157 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+15:51:44.405 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+15:51:44.408 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+16:05:04.685 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18fa3735] to prepare test instance [com.channelsoft.assistant.service.CustomerServiceTest@533e8562]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:331) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1553) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:973) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:750) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 25 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1225) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:119) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:853) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:843) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:842) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:152) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:336) ~[spring-orm-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318) ~[spring-orm-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 40 common frames omitted
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.channelsoft.assistant.entity.Email.custInfo in com.channelsoft.assistant.entity.Customer.emails
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:768) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:728) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1695) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1424) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1844) ~[hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850) ~[hibernate-entitymanager-4.3.6.Final.jar:4.3.6.Final]
+	... 48 common frames omitted
+16:05:52.590 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+16:05:52.828 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+16:05:52.831 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'cust_id' cannot be null
+16:08:36.771 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+16:08:37.004 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+16:08:37.007 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'cust_id' doesn't have a default value
+16:10:34.745 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+16:10:34.983 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+16:10:34.985 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'cust_id' doesn't have a default value
+16:11:46.755 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+16:11:46.993 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+16:11:46.995 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'cust_id' doesn't have a default value
+16:13:36.597 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()
+16:13:36.836 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+16:13:36.839 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'customer_cust_id' doesn't have a default value
+17:16:25.315 [main] DEBUG c.c.a.service.CustomerService - 杩涘叆 CustInfoService.save()

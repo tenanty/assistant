@@ -36,6 +36,21 @@ public class Phone implements Serializable {
 	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	@JoinColumn(nullable = false, name = "custId", insertable = true, updatable = true)
 	private Customer custInfo;
+	
+	public Phone() {
+		super();
+	}
+
+	public Phone(String phoneNo) {
+		super();
+		this.phoneNo = phoneNo;
+	}
+
+	public Phone(String phoneNo, Customer custInfo) {
+		super();
+		this.phoneNo = phoneNo;
+		this.custInfo = custInfo;
+	}
 
 	@Column(name = "phone_id")
 	public Long getPhoneId() {

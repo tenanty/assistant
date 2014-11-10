@@ -14,6 +14,9 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.apache.commons.lang3.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -28,27 +31,94 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Customer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long custId;//编号
-	private String custName;//姓名
-	private String custCompany;//公司
-	private String custJob;//职务
-	private String custAddress;//地址
-	private String custPortrait;//头像
-	private String remark;//备注
+	private Long custId;// 编号
+	private String custName;// 姓名
+	private String custCompany;// 公司
+	private String custJob;// 职务
+	private String custAddress;// 地址
+	private String custPortrait;// 头像
+	private String remark;// 备注
+
+	// 传输对象
+	@Transient
+	private String inputPhone;// 输入电话
+	@Transient
+	private String inputEmail;// 输入邮箱
+	@Transient
+	private String tag;// 标签
 
 	// 邮箱
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "customer", fetch = FetchType.EAGER)
 	private Set<Email> emails;
 	// 电话
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "custInfo", fetch = FetchType.EAGER)
 	private Set<Phone> phones;
 	// 联络历史
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "custInfo", fetch = FetchType.EAGER)
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "custInfo", fetch = FetchType.EAGER)
 	private Set<History> histories;
 	// 标记
 	@ManyToMany(targetEntity = Tag.class, cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	@JoinTable(name = "cust_tag", joinColumns = { @JoinColumn(name = "cust_id", referencedColumnName = "custId") }, inverseJoinColumns = { @JoinColumn(name = "tag_id", referencedColumnName = "tagId") })
 	private Set<Tag> tags;
+
+	public Customer(Long custId) {
+		super();
+		this.custId = custId;
+	}
+
+	public String getInputPhone() {
+		if (StringUtils.isNotBlank(inputPhone)) {
+			return inputPhone;
+		}
+		if (phones == null || phones.size() == 0) {
+			return StringUtils.EMPTY;
+		}
+		StringBuilder sb = new StringBuilder();
+		for (Phone phone : phones) {
+			sb.append(phone.getPhoneNo()).append(",");
+		}
+		return sb.toString();
+	}
+
+	public void setInputPhone(String inputPhone) {
+		this.inputPhone = inputPhone;
+	}
+
+	public String getInputEmail() {
+		if (StringUtils.isNotBlank(inputEmail)) {
+			return inputEmail;
+		}
+		if (emails == null || emails.size() == 0) {
+			return StringUtils.EMPTY;
+		}
+		StringBuilder sb = new StringBuilder();
+		for (Email email : emails) {
+			sb.append(email.getEmailAddress()).append(",");
+		}
+		return sb.toString();
+	}
+
+	public void setInputEmail(String inputEmail) {
+		this.inputEmail = inputEmail;
+	}
+
+	public String getTag() {
+		if (StringUtils.isNotBlank(tag)) {
+			return tag;
+		}
+		if (tags == null || tags.size() == 0) {
+			return StringUtils.EMPTY;
+		}
+		StringBuilder sb = new StringBuilder();
+		for (Tag tag : tags) {
+			sb.append(tag.getTagName()).append(",");
+		}
+		return sb.toString();
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
 
 	@JsonIgnore
 	public Set<Tag> getTags() {
@@ -159,8 +229,11 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "CustInfo [custId=" + custId + ", custName=" + custName + ", custCompany=" + custCompany + ", custJob="
-				+ custJob + ", custAddress=" + custAddress + ", custPortrait=" + custPortrait + ", remark=" + remark
-				+ ", emails=" + emails + ", phones=" + phones + "]";
+		return "CustInfo [custId=" + custId + ", custName=" + custName
+				+ ", custCompany=" + custCompany + ", custJob=" + custJob
+				+ ", custAddress=" + custAddress + ", custPortrait="
+				+ custPortrait + ", remark=" + remark + ", emails=" + emails
+				+ ", phones=" + phones + "]";
 	}
+
 }

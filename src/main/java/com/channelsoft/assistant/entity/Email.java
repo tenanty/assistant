@@ -33,16 +33,16 @@ public class Email implements Serializable {
 	private String emailDesc;
 	private String emailAddress;
 
-	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	@JoinColumn(nullable = false, name = "custId", insertable = true, updatable = true)
-	private Customer custInfo;
+	@ManyToOne(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
+	@JoinColumn(nullable = false, name = "cust_id", insertable = true, updatable = true)
+	private Customer customer;
 
-	public Customer getCustInfo() {
-		return custInfo;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public void setCustInfo(Customer custInfo) {
-		this.custInfo = custInfo;
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 	@Column(name = "email_id")
@@ -71,9 +71,14 @@ public class Email implements Serializable {
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
-	
+
 	public Email() {
 		super();
+	}
+
+	public Email(String emailAddress) {
+		super();
+		this.emailAddress = emailAddress;
 	}
 
 	public Email(Long emailId, String emailDesc, String emailAddress,
@@ -82,11 +87,12 @@ public class Email implements Serializable {
 		this.emailId = emailId;
 		this.emailDesc = emailDesc;
 		this.emailAddress = emailAddress;
-		this.custInfo = custInfo;
+		this.customer = custInfo;
 	}
 
 	@Override
 	public String toString() {
-		return "EmailInfo [emailId=" + emailId + ", emailDesc=" + emailDesc + ", emailAddress=" + emailAddress + "]";
+		return "EmailInfo [emailId=" + emailId + ", emailDesc=" + emailDesc
+				+ ", emailAddress=" + emailAddress + "]";
 	}
 }

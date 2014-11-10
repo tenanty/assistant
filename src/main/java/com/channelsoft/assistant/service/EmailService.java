@@ -5,7 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.channelsoft.assistant.repository.EmailInfoDao;
+import com.channelsoft.assistant.entity.Email;
+import com.channelsoft.assistant.repository.EmailDao;
 
 /**
  * 电子邮件业务逻辑对象
@@ -14,10 +15,15 @@ import com.channelsoft.assistant.repository.EmailInfoDao;
  * 
  */
 @Service
-public class EmailInfoService {
+public class EmailService {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	private EmailInfoDao emailInfoDao;
+	private EmailDao emailInfoDao;
+
+	public Email save(Email email) {
+		logger.debug("进入 EmailService.save()");
+		return emailInfoDao.save(email);
+	}
 
 }

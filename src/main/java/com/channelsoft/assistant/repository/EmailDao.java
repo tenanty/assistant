@@ -8,7 +8,13 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.channelsoft.assistant.entity.Email;
 
-public interface EmailInfoDao extends PagingAndSortingRepository<Email, Long> {
+/**
+ * 邮箱对象数据访问层
+ * 
+ * @author tenanty
+ *
+ */
+public interface EmailDao extends PagingAndSortingRepository<Email, Long> {
 
 	/**
 	 * 更新邮箱描述信息
@@ -19,7 +25,7 @@ public interface EmailInfoDao extends PagingAndSortingRepository<Email, Long> {
 	@Transactional
 	@Modifying
 	@Query("update Email email set email.emailDesc = ?1 where email.emailId = ?2")
-	public void updateEmailInfoDescById(String emailDesc, Long emailId);
+	public void updateEmailDescById(String emailDesc, Long emailId);
 
 	/**
 	 * 更新邮箱地址信息
@@ -30,6 +36,6 @@ public interface EmailInfoDao extends PagingAndSortingRepository<Email, Long> {
 	@Transactional
 	@Modifying
 	@Query("update Email email set email.emailAddress = ?1 where email.emailId = ?2")
-	public void updateEmailInfoAddressById(String emailAddress, Long emailId);
+	public void updateEmailAddressById(String emailAddress, Long emailId);
 
 }

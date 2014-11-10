@@ -73,18 +73,29 @@ public class Tag implements Serializable {
 	public void setCrateTime(Date crateTime) {
 		this.crateTime = crateTime;
 	}
+	
+	public Tag() {
+		super();
+	}
 
-//	public Account getAccountInfo() {
-//		return accountInfo;
-//	}
-//
-//	public void setAccountInfo(Account accountInfo) {
-//		this.accountInfo = accountInfo;
-//	}
+	public Tag(String tagName, Date crateTime) {
+		super();
+		this.tagName = tagName;
+		this.crateTime = crateTime;
+	}
+
+	// public Account getAccountInfo() {
+	// return accountInfo;
+	// }
+	//
+	// public void setAccountInfo(Account accountInfo) {
+	// this.accountInfo = accountInfo;
+	// }
 
 	@Override
 	public String toString() {
-		return "TagInfo [tagId=" + tagId + ", tagName=" + tagName + ", crateTime=" + crateTime + "]";
+		return "TagInfo [tagId=" + tagId + ", tagName=" + tagName
+				+ ", crateTime=" + crateTime + "]";
 	}
 
 }

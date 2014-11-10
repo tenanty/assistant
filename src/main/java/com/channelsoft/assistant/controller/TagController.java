@@ -35,14 +35,16 @@ public class TagController {
 	@ResponseBody
 	public DatatablesResponse<Tag> getAll() {
 		logger.debug("进入 TagController.customer()");
-		DatatablesResponse<Tag> response = new DatatablesResponse<Tag>();
+		DatatablesResponse<Tag> response = new DatatablesResponse<Tag>(
+				DatatablesResponse.STATUS_SUCCESS, "查询成功");
 		List<Tag> data = (List<Tag>) tagService.findAll();
 		response.setData(data);
 		return response;
 	}
 
 	@RequestMapping(value = "/tag", method = RequestMethod.POST)
-	public void updateTag(@RequestParam("data[tagName]")String data,String action) {
+	public void updateTag(@RequestParam("data[tagName]") String data,
+			String action) {
 		logger.debug("进入 TagController.updateTag()");
 	}
 
@@ -50,7 +52,8 @@ public class TagController {
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll(@PathVariable("id") Long id) {
 		logger.debug("进入 TagController.customer()");
-		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
+		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>(
+				DatatablesResponse.STATUS_SUCCESS, "查询成功");
 		List<Customer> data = (List<Customer>) tagService
 				.getCustomersByTagId(id);
 		response.setData(data);

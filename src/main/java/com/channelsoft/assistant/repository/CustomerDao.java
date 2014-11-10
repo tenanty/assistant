@@ -17,5 +17,5 @@ public interface CustomerDao extends PagingAndSortingRepository<Customer, Long> 
 	@Transactional(timeout = 10)
 	@Query("delete from Customer customer where customer.custName = ?1 ")
 	public void deleteByCustName(String custName);
-
+	
 }

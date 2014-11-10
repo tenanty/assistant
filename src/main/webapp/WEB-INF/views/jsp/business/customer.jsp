@@ -98,30 +98,61 @@
 							$("#myModal").modal('hide');
 						});
 						
+						
 						jQuery('#saveButton').click(function() {
+							console.log($("#myForm").serializeObject());
 							console.log("saveButton...");
+							/**$.post("${ctx}/customer/add",  
+									$("#myForm").serializeObject(),  
+				                    function(data){                                                                               
+										console.log("获取数据信息:"+data);		                          
+				                    });  
+							*/
+							$.ajax({
+								//contentType: "application/json; charset=utf-8",
+								//contentType: "application/json; charset=utf-8",
+								url:"${ctx}/customer/add",
+								data:$("#myForm").serializeObject(),
+								cache : false,
+								type:"POST",
+								dataType: "json",
+								success:function(data){
+									console.log("获取数据信息:"+data);									
+								}
+							});
 							$("#myModal").modal('hide');
+						});
+						
+						$.ajax({
+							url:"${ctx}/customer/add",
+							data:$("#myForm").serializeObject(),
+							cache : false,
+							type:"POST",
+							dataType: "json",
+							success:function(data){
+								console.log("获取数据信息:"+data);									
+							}
 						});
 					});
 	//修改逻辑
 	function a(p) {
 		
 		var phone = '';
-		$("input[name='phones']").each(  
+		$("input[name='phone']").each(  
 				function(){  
 					phone += $(this).val()+","
 					console.log("#phone:"+$(this).val());  
 				}  
 		); 
 		var email = '';
-		$("input[name='emails']").each(  
+		$("input[name='email']").each(  
 				function(){  
 					email += $(this).val()+","
 					console.log("#email:"+$(this).val());  
 				}  
 		); 
-		$("#phone").val(phone);
-		$("#email").val(email);
+		$("#inputPhone").val(phone);
+		$("#inputEmail").val(email);
 		
 		console.log(p);
 		console.log($("#myForm").serializeArray());//将form表单中的表单输入元素中的name组成为对象数组如：[{"name":"name","value":"1"},{"name":"name2","value":"2"}]
@@ -218,28 +249,10 @@ li {
 					<h4 class="modal-title" id="myModalLabel">添加客户资料</h4>
 				</div>
 				<div class="modal-body">
-					<form id="myForm" action="#">
-					<input type="hidden" id="phone" name="phone">
-					<input type="hidden" id="email" name="email">
+					<form id="myForm" action="#" method="post">
+					<input type="hidden" id="inputPhone" name="inputPhone">
+					<input type="hidden" id="inputEmail" name="inputEmail">
 						<div class="row">
-							<!-- <div class="col-md-4 text-center">
-								添加头像:
-								<div class="form-group">
-									<div class="fileinput fileinput-new" data-provides="fileinput">
-										<div class="fileinput-preview thumbnail"
-											data-trigger="fileinput" style="width: 100px; height: 75px;"></div>
-										<div>
-											<span class="btn btn-primary btn-embossed btn-file"> <span
-												class="fileinput-new"><span class="fui-image"></span>&nbsp;&nbsp;选择头像</span>
-												<span class="fileinput-exists"><span class="fui-gear"></span>&nbsp;&nbsp;</span>
-												<input id="custPortrait" type="file" name="custPortrait">
-											</span> <a href="#"
-												class="btn btn-primary btn-embossed fileinput-exists"
-												data-dismiss="fileinput"><span class="fui-trash"></span>&nbsp;&nbsp;</a>
-										</div>
-									</div>
-								</div>
-								</div> -->
 							<div class="col-md-8">
 								姓名<input type="text" id="custName" class="form-control input-sm"
 									name="custName" placeholder="姓名" /> 公司<input type="text"
@@ -257,7 +270,7 @@ li {
 								<div id="phonelist">
 									<div>
 										移动电话<span class="fui-plus" onclick="addphone()"></span><input
-											type="text" class="form-control input-sm" name="phones"
+											type="text" class="form-control input-sm" name="phone"
 											placeholder="移动电话" />
 									</div>
 								</div>
@@ -266,7 +279,7 @@ li {
 								<div id="emaillist">
 									<div>
 										电子邮件<span class="fui-plus" onclick="addemail()"></span><input
-											type="text" class="form-control input-sm" name="emails"
+											type="text" class="form-control input-sm" name="email"
 											placeholder="电子邮件" />
 									</div>
 								</div>
@@ -276,7 +289,7 @@ li {
 							<div class="col-xs-12">
 								客户标签
 								<div class="tagsinput-primary">
-									<input name="tags" class="tagsinput" value="客户" />
+									<input name="tag" class="tagsinput" value="客户" />
 								</div>
 							</div>
 						</div>

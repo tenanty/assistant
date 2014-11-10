@@ -36,7 +36,8 @@ public class CustomerController {
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll() {
 		logger.debug("进入 CustomerController.getAll()");
-		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
+		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>(
+				DatatablesResponse.STATUS_SUCCESS, "查询成功");
 		List<Customer> data = (List<Customer>) customerService.getAllCustomer();
 		response.setData(data);
 		return response;
@@ -44,11 +45,12 @@ public class CustomerController {
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	@ResponseBody
-	public DatatablesResponse<Customer> add() {
+	public DatatablesResponse<Customer> add(Customer customer) {
 		logger.debug("进入 CustomerController.add()");
-		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>();
-		List<Customer> data = (List<Customer>) customerService.getAllCustomer();
-		response.setData(data);
+		logger.debug("#customer=" + customer);
+		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>(
+				DatatablesResponse.STATUS_SUCCESS, "添加成功");
+		customerService.save(customer);
 		return response;
 	}
 

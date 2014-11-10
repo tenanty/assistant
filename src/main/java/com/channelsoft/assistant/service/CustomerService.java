@@ -66,4 +66,9 @@ public class CustomerService {
 		return (List<Customer>) customerDao.findAll();
 	}
 	
+	public Customer save(Customer customer){
+		logger.debug("进入 CustInfoService.save()");
+		return customerDao.save(customer);
+	}
+	
 }

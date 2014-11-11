@@ -3,6 +3,7 @@ package com.channelsoft.assistant.service;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.hibernate.service.spi.ServiceException;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -70,7 +71,8 @@ public class CustomerServiceTest {
 		Set<Customer> custs = new HashSet<Customer>();
 		custs.add(customer);
 		
-		tag1 = tagService.findTagByTagName("标签3");
+//		tag1 = tagService.findTagByTagName("标签3");
+		tag1.setTagName("标签1");
 		tag1.setCusts(custs);
 		
 		Tag tag2 = new Tag();

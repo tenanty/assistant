@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.channelsoft.assistant.entity.Customer;
 import com.channelsoft.assistant.entity.Email;
+import com.channelsoft.assistant.entity.Tag;
 import com.channelsoft.assistant.util.ObjectNotExistException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -20,6 +21,9 @@ public class CustomerServiceTest {
 
 	@Autowired
 	private CustomerService customerService;
+	
+	@Autowired
+	private TagService tagService;
 
 	@Test(expected = ObjectNotExistException.class)
 	@Ignore
@@ -54,6 +58,31 @@ public class CustomerServiceTest {
 		customer.setEmails(emails);
 		customerService.save(customer);
 		
+	}
+	
+	@Test
+	public void testAddCustomerWithTag(){
+		Customer customer = new Customer();
+		customer.setCustName("张三");
+		
+		Tag tag1 = new Tag();
+		
+		Set<Customer> custs = new HashSet<Customer>();
+		custs.add(customer);
+		
+		tag1 = tagService.findTagByTagName("标签3");
+		tag1.setCusts(custs);
+		
+		Tag tag2 = new Tag();
+		tag2.setTagName("标签2");
+		tag2.setCusts(custs);
+		
+		Set<Tag> tags = new HashSet<Tag>();
+		tags.add(tag1);
+		tags.add(tag2);
+		
+		customer.setTags(tags);
+		customerService.save(customer);
 	}
 
 }

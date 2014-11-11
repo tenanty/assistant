@@ -39,8 +39,19 @@ public class TagService {
 		logger.debug("进入 CustInfoService.getCustomersByTagId()");
 		Tag tag = tagDao.findOne(tagId);
 		List<Customer> list = new ArrayList<Customer>();
-//		list.addAll(tag.getCusts());
+		// list.addAll(tag.getCusts());
 		return list;
+	}
+
+	/**
+	 * 根据标签名获取标签对象
+	 * 
+	 * @param tagName
+	 * @return
+	 */
+	public Tag findTagByTagName(String tagName) {
+		logger.debug("进入 CustInfoService.findTagByTagName()");
+		return tagDao.findTagByTagName(tagName);
 	}
 
 }

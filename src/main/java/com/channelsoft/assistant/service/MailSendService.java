@@ -49,7 +49,7 @@ public class MailSendService {
 			e.printStackTrace();
 		}
 		try {
-			messageHelper.setSubject("测试HTML邮件！");
+			messageHelper.setSubject("测试HTML邮件!");
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

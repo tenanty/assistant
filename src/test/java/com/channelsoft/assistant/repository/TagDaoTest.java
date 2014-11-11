@@ -20,12 +20,19 @@ public class TagDaoTest {
 	@Test
 	public void testSaveTag() {
 
-		for(int i=0;i<100;i++){
+		for (int i = 0; i < 100; i++) {
 			Tag tag = new Tag();
 			tag.setCrateTime(new Date());
-			tag.setTagName("测试标签"+i);
+			tag.setTagName("测试标签" + i);
 			tagDao.save(tag);
 		}
+	}
+
+	@Test
+	public void testFindTagByTagName() {
+		Tag tag = tagDao.findTagByTagName("标签3");
+		tag.setTagName("标签-3");
+		System.out.println(tag);
 	}
 
 }

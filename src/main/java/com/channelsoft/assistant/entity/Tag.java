@@ -17,6 +17,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
+ * 标记实体对象
  * 
  * @author tenanty
  * 
@@ -56,7 +57,7 @@ public class Tag implements Serializable {
 		this.tagId = tagId;
 	}
 
-	@Column(name = "tag_name")
+	@Column(name = "tag_name", unique = true, nullable = true, columnDefinition = "标记名")
 	public String getTagName() {
 		return tagName;
 	}
@@ -65,7 +66,7 @@ public class Tag implements Serializable {
 		this.tagName = tagName;
 	}
 
-	@Column(name = "create_time")
+	@Column(name = "create_time", columnDefinition = "创建时间")
 	public Date getCrateTime() {
 		return crateTime;
 	}
@@ -73,7 +74,7 @@ public class Tag implements Serializable {
 	public void setCrateTime(Date crateTime) {
 		this.crateTime = crateTime;
 	}
-	
+
 	public Tag() {
 		super();
 	}
@@ -83,14 +84,6 @@ public class Tag implements Serializable {
 		this.tagName = tagName;
 		this.crateTime = crateTime;
 	}
-
-	// public Account getAccountInfo() {
-	// return accountInfo;
-	// }
-	//
-	// public void setAccountInfo(Account accountInfo) {
-	// this.accountInfo = accountInfo;
-	// }
 
 	@Override
 	public String toString() {

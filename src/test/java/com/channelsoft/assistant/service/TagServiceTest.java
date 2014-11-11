@@ -37,5 +37,10 @@ public class TagServiceTest {
 			System.out.println(customer);
 		}
 	}
+	
+	@Test
+	public void testAddCustomerWithTag(){
+		
+	}
 
 }

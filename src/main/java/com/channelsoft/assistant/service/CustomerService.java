@@ -20,7 +20,6 @@ import com.channelsoft.assistant.util.ObjectNotExistException;
  * 
  */
 @Service
-@Transactional
 public class CustomerService {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
@@ -57,6 +56,7 @@ public class CustomerService {
 	 * 
 	 * @return
 	 */
+	@Transactional
 	public void deleteCustInfoById(Long custId) {
 		logger.debug("进入 CustInfoService.deleteCustInfoById()");
 		Customer custInfo = new Customer();
@@ -69,6 +69,7 @@ public class CustomerService {
 		return (List<Customer>) customerDao.findAll();
 	}
 	
+	@Transactional
 	public Customer save(Customer customer){
 		logger.debug("进入 CustInfoService.save()");
 		return customerDao.save(customer);

@@ -48,7 +48,7 @@
 						var oTable = jQuery('#example')
 								.DataTable(
 										{
-											sAjaxSource : "${ctx}/customer/get",
+											sAjaxSource : "${ctx}/customer/all",
 											bDeferRender : true,
 											deferRender : true,//快速删除搜索条中内容
 											filter : true,//控制是否对表格数据进行过滤,设置为false时将不出现查询输入框,默认为true
@@ -80,12 +80,12 @@
 														"mRender" : function(
 																data, type,
 																full) {
-															var render = "<button  onclick=a('/admin/Article/edit?Id="
-																	+ data.salary
-																	+ "') class='update'>a</button>";
-															render += "<button  onclick=d('/admin/Article/edit?Id="
-																	+ data.salary
-																	+ "') class='delete'>b</button>";
+															var render = "<button  onclick=update('"
+																	+ data.custId
+																	+ "') class='update'>修改</button>";
+															render += "<button  onclick=del('"
+																	+ data.custId
+																	+ "') class='delete'>删除</button>";
 															return render;
 														},
 														"width" : "10%",
@@ -122,30 +122,53 @@
 							console.log("ajax start...");
 							//ajax同步数据到服务端
 							$.ajax({
-								url : "${ctx}/customer/add",
+								url : "${ctx}/customer",
 								data : $("#myForm").serializeObject(),
 								cache : false,
 								type : "POST",
 								dataType : "json",
 								success : function(data) {
-									console.log("获取数据信息:" + data);
+									console.log("获取数据状态:" + data.status);
+									console.log("获取数据信息:" + data.data);
+									console.log("获取数据编号:"+data.id);
+									console.log("add row start...");
+									oTable.row.add({
+										custId : data.id,
+										custName : $("#custName").val(),
+										custCompany : $("#custCompany").val(),
+										custJob : $("#custJob").val(),
+										custAddress : $("#custAddress").val()
+									}).draw();
 								}
 							});
 							
-							console.log("add row start...");
-							oTable.row.add({
-								custId : "aaa",
-								custName : $("#custName").val(),
-								custCompany : $("#custCompany").val(),
-								custJob : $("#custJob").val(),
-								custAddress : $("#custAddress").val()
-							}).draw();
-
 							$("#myModal").modal('hide');
 						});
 					});
+	
+	function del(p,rowid){
+		if(confirm("确认删除该记录吗?")){
+			console.log("@@@"+p);
+			//ajax同步数据到服务端
+			$.ajax({
+				url : "${ctx}/customer/"+p,
+				cache : false,
+				type : "delete",
+				dataType : "json",
+				success : function(data) {
+					console.log("获取数据状态:" + data.status);
+					console.log("获取数据编号:" + data.id);
+					
+					
+				}
+			});
+		}
+		
+	}
+	
+	
 	//修改逻辑
-	function a(p) {
+	function update(p) {
 
 		var phone = '';
 		$("input[name='phone']").each(function() {

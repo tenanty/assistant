@@ -32,7 +32,7 @@ public class CustomerService {
 	 * @return
 	 */
 	public Iterable<Customer> getAllCustomer(){
-		logger.debug("进入 CustInfoService.findCustInfoById()");
+		logger.debug("进入 CustomerService.findCustInfoById()");
 		return customerDao.findAll();
 	}
 
@@ -43,7 +43,7 @@ public class CustomerService {
 	 * @return
 	 */
 	public Customer findCustInfoById(Long custId) {
-		logger.debug("进入 CustInfoService.findCustInfoById()");
+		logger.debug("进入 CustomerService.findCustInfoById()");
 		Customer custInfo = customerDao.findOne(custId);
 		if (custInfo == null) {
 			throw new ObjectNotExistException("客户信息");
@@ -57,21 +57,18 @@ public class CustomerService {
 	 * @return
 	 */
 	@Transactional
-	public void deleteCustInfoById(Long custId) {
-		logger.debug("进入 CustInfoService.deleteCustInfoById()");
-		Customer custInfo = new Customer();
-		custInfo.setCustId(custId);
-		customerDao.delete(custInfo);
+	public void deleteCustomerById(Long id) {
+		logger.debug("进入 CustomerService.deleteCustInfoById()");
+		customerDao.delete(id);
 	}
 	
 	public List<Customer> findAll(){
-		logger.debug("进入 CustInfoService.findAll()");
+		logger.debug("进入 CustomerService.findAll()");
 		return (List<Customer>) customerDao.findAll();
 	}
 	
-	@Transactional
 	public Customer save(Customer customer){
-		logger.debug("进入 CustInfoService.save()");
+		logger.debug("进入 CustomerService.save()");
 		return customerDao.save(customer);
 	}
 	

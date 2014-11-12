@@ -42,7 +42,7 @@ public class CustomerServiceTest {
 	@Test
 	public void testDeleteCustInfoById() {
 		Long custId = new Long(2);
-		customerService.deleteCustInfoById(custId);
+		customerService.deleteCustomerById(custId);
 	}
 	
 	@Test

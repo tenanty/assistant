@@ -78,6 +78,14 @@ public class Phone implements Serializable {
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
 	}
+	
+	public Customer getCustInfo() {
+		return custInfo;
+	}
+
+	public void setCustInfo(Customer custInfo) {
+		this.custInfo = custInfo;
+	}
 
 	@Override
 	public String toString() {

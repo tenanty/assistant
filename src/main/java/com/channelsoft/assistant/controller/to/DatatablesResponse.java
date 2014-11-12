@@ -23,6 +23,9 @@ public class DatatablesResponse<T> {
 	private String status;
 	// 消息信息
 	private String message;
+	// 操作数据编号
+	private Long id;
+	
 	// 数据信息
 	private List<T> data;
 	
@@ -49,6 +52,13 @@ public class DatatablesResponse<T> {
 	public void setData(List<T> data) {
 		this.data = data;
 	}
-	
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 }

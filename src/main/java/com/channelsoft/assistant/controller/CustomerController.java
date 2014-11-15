@@ -93,6 +93,7 @@ public class CustomerController {
 		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>(
 				DatatablesResponse.STATUS_SUCCESS, "删除成功");
 		customerService.deleteCustomerById(id);
+		response.setId(id);
 		return response;
 	}
 	
@@ -110,7 +111,24 @@ public class CustomerController {
 				DatatablesResponse.STATUS_SUCCESS, "修改成功");
 		return response;
 	}
-
+	
+	/**
+	 * 获取
+	 * @param id
+	 * @param customer
+	 * @return
+	 */
+	@RequestMapping(value = "/customer/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public DatatablesResponse<Customer> getCustomer(@PathVariable("id") Long id,Customer customer){
+		logger.debug("进入 CustomerController.update()");
+		DatatablesResponse<Customer> response = new DatatablesResponse<Customer>(
+				DatatablesResponse.STATUS_SUCCESS, "获取成功");
+		Customer customer2 = customerService.findOne(id);
+		response.setObj(customer2);
+		return response;
+	}
+	
 	/**
 	 * 构建客户信息
 	 * @param customer

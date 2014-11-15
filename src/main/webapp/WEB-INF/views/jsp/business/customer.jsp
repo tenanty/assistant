@@ -28,24 +28,16 @@
 <script type="text/javascript" src="${ctx}/static/customer/qframe.js"></script>
 
 <script type="text/javascript">
+	var oTable;
+
 	$(document)
 			.ready(
 					function() {
+
 						//标签字段增加
 						$('input.tagsinput').tagsinput();
-						//增加点击事件
-						$("#example tbody tr").click(
-								function(e) {
-									if ($(this).hasClass('row_selected')) {
-										$(this).removeClass('row_selected');
-									} else {
-										oTable.$('tr.row_selected')
-												.removeClass('row_selected');
-										$(this).addClass('row_selected');
-									}
-								});
-						var giCount = 2;
-						var oTable = jQuery('#example')
+
+						oTable = jQuery('#example')
 								.DataTable(
 										{
 											sAjaxSource : "${ctx}/customer/all",
@@ -80,36 +72,80 @@
 														"mRender" : function(
 																data, type,
 																full) {
-															var render = "<button  onclick=update('"
-																	+ data.custId
-																	+ "') class='update'>修改</button>";
-															render += "<button  onclick=del('"
-																	+ data.custId
-																	+ "') class='delete'>删除</button>";
+															var render = "<span class='fui-new icon-update' alt='修改'></span>&nbsp";
+															render += "<span class='fui-trash icon-delete' alt='删除'></span>";
 															return render;
 														},
 														"width" : "10%",
 														"sortable" : false
 													} ]
 										});
-
+						//删除记录逻辑
+						$('#example tbody').on(
+							'click',
+							'span.icon-delete',
+							function() {
+								var row = oTable.row($(this).parents('tr'));
+								if (confirm("确认删除该记录吗?")) {
+									$.ajax({
+										url : "${ctx}/customer/" + row.data().custId,
+										cache : false,
+										type : "delete",
+										dataType : "json",
+										success : function(data) {
+											console.log("获取数据状态:" + data.status);
+											console.log("获取数据编号:" + data.id);
+											console.log($(this).parents('tr'));
+											row.remove().draw();
+										}
+									});
+								}
+							});
+						//点击修改记录逻辑
+						$('#example tbody').on(
+							'click',
+							'span.icon-update',
+							function() {
+								var row = oTable.row($(this).parents('tr'));
+								$.ajax({
+									url : "${ctx}/customer/" + row.data().custId,
+									//data : $("#myForm").serializeObject(),
+									cache : false,
+									type : "get",
+									dataType : "json",
+									success : function(data){
+										console.log(data);
+										//打开编辑界面
+										$("#myModal").modal('show');
+									}
+								});
+								
+							});
+						
+						
+						
+						//点击关闭按钮逻辑
 						jQuery('#closeButton').click(function() {
 							console.log("closeButton...");
+							//form清理
+							$('#myForm')[0].reset();
+							//隐藏modal输入框
 							$("#myModal").modal('hide');
 						});
-
+						
+						//点击保存按钮
 						jQuery('#saveButton').click(function() {
 							console.log($("#myForm").serializeObject());
 							console.log("saveButton...");
-							
+							//设置电话号码
 							console.log("phone init...");
-							//设置电话号码、电子邮箱信息传输到后台
 							var phone = '';
 							$("input[name='phone']").each(function() {
 								phone += $(this).val() + ","
 								console.log("#phone:" + $(this).val());
 							});
 							
+							//设置电子邮箱信息传输到后台
 							console.log("email init...");
 							var email = '';
 							$("input[name='email']").each(function() {
@@ -118,7 +154,7 @@
 							});
 							$("#inputPhone").val(phone);
 							$("#inputEmail").val(email);
-							
+
 							console.log("ajax start...");
 							//ajax同步数据到服务端
 							$.ajax({
@@ -130,7 +166,7 @@
 								success : function(data) {
 									console.log("获取数据状态:" + data.status);
 									console.log("获取数据信息:" + data.data);
-									console.log("获取数据编号:"+data.id);
+									console.log("获取数据编号:" + data.id);
 									console.log("add row start...");
 									oTable.row.add({
 										custId : data.id,
@@ -139,56 +175,14 @@
 										custJob : $("#custJob").val(),
 										custAddress : $("#custAddress").val()
 									}).draw();
+									//form清理
+									$('#myForm')[0].reset();
 								}
 							});
-							
+
 							$("#myModal").modal('hide');
 						});
 					});
-	
-	function del(p,rowid){
-		if(confirm("确认删除该记录吗?")){
-			console.log("@@@"+p);
-			//ajax同步数据到服务端
-			$.ajax({
-				url : "${ctx}/customer/"+p,
-				cache : false,
-				type : "delete",
-				dataType : "json",
-				success : function(data) {
-					console.log("获取数据状态:" + data.status);
-					console.log("获取数据编号:" + data.id);
-					
-					
-				}
-			});
-		}
-		
-	}
-	
-	
-	//修改逻辑
-	function update(p) {
-
-		var phone = '';
-		$("input[name='phone']").each(function() {
-			phone += $(this).val() + ","
-			console.log("#phone:" + $(this).val());
-		});
-		var email = '';
-		$("input[name='email']").each(function() {
-			email += $(this).val() + ","
-			console.log("#email:" + $(this).val());
-		});
-		$("#inputPhone").val(phone);
-		$("#inputEmail").val(email);
-
-		console.log(p);
-		console.log($("#myForm").serializeArray());//将form表单中的表单输入元素中的name组成为对象数组如：[{"name":"name","value":"1"},{"name":"name2","value":"2"}]
-		console.log($("#myForm").serializeObject());
-
-		//$('#myForm')[0].reset();
-	}
 
 	function addphone() {
 		$("#phonelist")

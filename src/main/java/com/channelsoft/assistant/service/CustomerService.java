@@ -26,12 +26,13 @@ public class CustomerService {
 
 	@Autowired
 	private CustomerDao customerDao;
-	
+
 	/**
 	 * 获取所有客户资料
+	 * 
 	 * @return
 	 */
-	public Iterable<Customer> getAllCustomer(){
+	public Iterable<Customer> getAllCustomer() {
 		logger.debug("进入 CustomerService.findCustInfoById()");
 		return customerDao.findAll();
 	}
@@ -61,15 +62,24 @@ public class CustomerService {
 		logger.debug("进入 CustomerService.deleteCustInfoById()");
 		customerDao.delete(id);
 	}
-	
-	public List<Customer> findAll(){
+
+	/**
+	 * 获取指定编号的客户信息
+	 * 
+	 * @param id
+	 */
+	public Customer findOne(Long id) {
+		return customerDao.findOne(id);
+	}
+
+	public List<Customer> findAll() {
 		logger.debug("进入 CustomerService.findAll()");
 		return (List<Customer>) customerDao.findAll();
 	}
-	
-	public Customer save(Customer customer){
+
+	public Customer save(Customer customer) {
 		logger.debug("进入 CustomerService.save()");
 		return customerDao.save(customer);
 	}
-	
+
 }

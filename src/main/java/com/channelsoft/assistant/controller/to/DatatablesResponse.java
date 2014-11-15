@@ -2,6 +2,8 @@ package com.channelsoft.assistant.controller.to;
 
 import java.util.List;
 
+import com.channelsoft.assistant.entity.Customer;
+
 /**
  * 结果信息返回
  * @author tenanty
@@ -25,10 +27,19 @@ public class DatatablesResponse<T> {
 	private String message;
 	// 操作数据编号
 	private Long id;
-	
 	// 数据信息
 	private List<T> data;
+	//对象信息
+	private T obj;
 	
+	public T getObj() {
+		return obj;
+	}
+
+	public void setObj(T t) {
+		this.obj = t;
+	}
+
 	public String getMessage() {
 		return message;
 	}

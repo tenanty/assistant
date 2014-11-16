@@ -187,13 +187,13 @@
 	function addphone() {
 		$("#phonelist")
 				.append(
-						'<div>移动电话1<span class="fui-cross" onclick="deletePhone(this);"></span><input type="text" class="form-control input-sm" name="phones" placeholder="移动电话" /></div>');
+						'<div>移动电话1<span class="fui-cross" onclick="deletePhone(this);"></span><input type="text" class="form-control input-sm" name="phone" placeholder="移动电话" /></div>');
 	}
 
 	function addemail() {
 		$("#emaillist")
 				.append(
-						'<div>电子邮箱1<span class="fui-cross" onclick="deleteEmail(this);"></span><input type="text" class="form-control input-sm" name="emails" placeholder="电子邮箱1" /></div>');
+						'<div>电子邮箱1<span class="fui-cross" onclick="deleteEmail(this);"></span><input type="text" class="form-control input-sm" name="email" placeholder="电子邮箱1" /></div>');
 	}
 	function deleteEmail(a) {
 		if (confirm("确定要删除电子邮箱？")) {

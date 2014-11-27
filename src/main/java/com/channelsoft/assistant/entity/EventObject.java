@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 
+ * event must be an Event Object with a title and start at the very least.
  * @author tenanty
  *
  */

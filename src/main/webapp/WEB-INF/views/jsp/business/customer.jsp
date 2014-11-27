@@ -24,8 +24,12 @@
 <script type="text/javascript"
 	src="${ctx}/static/flatui/dist/js/flat-ui-pro.min.js"></script>
 <script type="text/javascript"
+	src="${ctx}/static/flatui/dist/js/application.js"></script>
+	
+<script type="text/javascript"
 	src="${ctx}/static/datatables/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="${ctx}/static/customer/qframe.js"></script>
+
 
 <script type="text/javascript">
 	var oTable;
@@ -232,8 +236,8 @@ li {
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="${ctx }/customer">客户管理</a></li>
-				<li><a href="${ctx }/schedule">日程</a></li>
+				<li class="active"><a href="${ctx }/customer/list">客户管理</a></li>
+				<li><a href="${ctx }/schedule/list">日程</a></li>
 				<li><a href="${ctx }/history">联络历史</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">设置 <b class="caret"></b></a>

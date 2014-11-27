@@ -1,6 +1,6 @@
 <%@page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,16 +11,21 @@
 <title>assistant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href='${ctx }/static/fullcalender/fullcalendar.css' rel='stylesheet' />
-<link href='${ctx }/static/fullcalender/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='${ctx }/static/fullcalender/fullcalendar.css'
+	rel='stylesheet' />
+<link href='${ctx }/static/fullcalender/fullcalendar.print.css'
+	rel='stylesheet' media='print' />
 
 <!-- Loading Bootstrap -->
-<link href="${ctx }/static/flatui/dist/css/vendor/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="${ctx }/static/flatui/dist/css/vendor/bootstrap.min.css"
+	type="text/css" rel="stylesheet" />
 
 <!-- Loading Flat UI -->
-<link href="${ctx }/static/flatui/dist/css/flat-ui-pro.css" type="text/css" rel="stylesheet" />
+<link href="${ctx }/static/flatui/dist/css/flat-ui-pro.css"
+	type="text/css" rel="stylesheet" />
 
-<link rel="shortcut icon" href="${ctx }/static/flatui/dist/img/favicon.ico">
+<link rel="shortcut icon"
+	href="${ctx }/static/flatui/dist/img/favicon.ico">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>
@@ -52,101 +57,109 @@ body {
 <script src="${ctx }/static/flatui/dist/js/flat-ui-pro.min.js"></script>
 
 <script src='${ctx }/static/fullcalender/fullcalendar.min.js'></script>
-<script type="text/javascript" src="${ctx }/static/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript"
+	src="${ctx }/static/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript">
-    var selectStart;
-    var selectEnd;
-    $(document).ready(
+	var selectStart;
+	var selectEnd;
+	$(document).ready(
 			function() {
 
 				$("#custom-switch-01").bootstrapSwitch({
-					onSwitchChange:function(){
-							if($("#custom-switch-01").is(":checked")){
-								$("#txsj").val('');
-								$("#datetimeInput").show();
-							}else{
-								$("#txsj").val('');
-								$("#datetimeInput").hide();
-							}
+					onSwitchChange : function() {
+						if ($("#custom-switch-01").is(":checked")) {
+							$("#txsj").val('');
+							$("#datetimeInput").show();
+						} else {
+							$("#txsj").val('');
+							$("#datetimeInput").hide();
 						}
-					});
+					}
+				});
 
-				if($("#custom-switch-01").is(":checked")){
+				if ($("#custom-switch-01").is(":checked")) {
 					$("#txsj").val('');
 					$("#datetimeInput").show();
-				}else{
+				} else {
 					$("#txsj").val('');
 					$("#datetimeInput").hide();
 				}
-				
-				$("#saveEvent").click(function(){
-					eventData = {
-							title : $("#eventTitle").val(),
-							start : selectStart,
-							end : selectEnd
-						};
-					$('#calendar').fullCalendar('renderEvent',
-							eventData, true); // stick? = true
-					$("#myModal").modal('hide');
-				});
-				$('#calendar').fullCalendar(
-						{
-							header : {
-								left : 'prev,next today',
-								center : 'title',
-								right : ''
-							},
-							defaultDate : '2014-09-12',
-							selectable : true,
-							selectHelper : true,
-							select : function(start, end) {
-								//alert(new Date(start));
-								//alert(new Date(end));
-								selectStart = start;
-								selectEnd = end;
-								$("#myModalLabel").html("æ¥ç¨æ·»å ");
-								$("#myModal").modal();
-								/* 
-								var title = prompt('Event Title:');
-								var eventData;
-								if (title) {
-									eventData = {
-										title : title,
-										start : start,
-										end : end
-									};
-									$('#calendar').fullCalendar('renderEvent',
-											eventData, true); // stick? = true
-								}
-								$('#calendar').fullCalendar('unselect'); */
-							},
-							editable : true,
-							eventLimit : false, // allow "more" link when too many events
-							events : [ {
-								title : 'èç³»èç',
-								start : '2014-09-01'
-							} ]
+
+				$("#saveEvent").click(
+						function() {
+							eventData = {
+								title : $("#eventTitle").val(),
+								start : selectStart,
+								end : selectEnd
+							};
+							$('#calendar').fullCalendar('renderEvent',
+									eventData, true); // stick? = true
+							$("#myModal").modal('hide');
 						});
-				 $("#logout").click(function(){
-						location.href = "${ctx }/login";
-					});
+				$('#calendar').fullCalendar({
+					header : {
+						left : 'prev,next today',
+						center : 'title',
+						right : ''
+					},
+					defaultDate : '2014-09-12',
+					selectable : true,
+					selectHelper : true,
+					select : function(start, end) {
+						//alert(new Date(start));
+						//alert(new Date(end));
+						selectStart = start;
+						selectEnd = end;
+						$("#myModalLabel").html("测试");
+						$("#myModal").modal();
+						/* 
+						var title = prompt('Event Title:');
+						var eventData;
+						if (title) {
+							eventData = {
+								title : title,
+								start : start,
+								end : end
+							};
+							$('#calendar').fullCalendar('renderEvent',
+									eventData, true); // stick? = true
+						}
+						$('#calendar').fullCalendar('unselect'); */
+					},
+					editable : true,
+					eventLimit : false, // allow "more" link when too many events
+					events : [ {
+						title : '测试',
+						start : '2014-09-01'
+					} ]
+				});
+				$("#logout").click(function() {
+					location.href = "${ctx }/login";
+				});
 
-				  $("#research").click(function(){
-						location.href ="${ctx }/research";
-					});
-				 var currentDate = new Date();
-					var fullyear = currentDate.getFullYear();
-					var month = (currentDate.getMonth()+1)>10 ? (currentDate.getMonth()+1) :"0"+(currentDate.getMonth()+1);
-					var date =  currentDate.getDate()>10?currentDate.getDate():"0"+currentDate.getDate();
-					var hour = currentDate.getHours()>10?currentDate.getHours():"0"+currentDate.getHours();
-					var minute = currentDate.getMinutes()>10?currentDate.getMinutes():"0"+currentDate.getMinutes();
-					var second = currentDate.getSeconds()>10?currentDate.getSeconds():"0"+currentDate.getSeconds();
-					var dateFmt = fullyear+"-"+month+"-"+date+" "+hour+":"+minute+":"+second;
-					pickerOption = {dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:dateFmt};
+				$("#research").click(function() {
+					location.href = "${ctx }/research";
+				});
+				var currentDate = new Date();
+				var fullyear = currentDate.getFullYear();
+				var month = (currentDate.getMonth() + 1) > 10 ? (currentDate
+						.getMonth() + 1) : "0" + (currentDate.getMonth() + 1);
+				var date = currentDate.getDate() > 10 ? currentDate.getDate()
+						: "0" + currentDate.getDate();
+				var hour = currentDate.getHours() > 10 ? currentDate.getHours()
+						: "0" + currentDate.getHours();
+				var minute = currentDate.getMinutes() > 10 ? currentDate
+						.getMinutes() : "0" + currentDate.getMinutes();
+				var second = currentDate.getSeconds() > 10 ? currentDate
+						.getSeconds() : "0" + currentDate.getSeconds();
+				var dateFmt = fullyear + "-" + month + "-" + date + " " + hour
+						+ ":" + minute + ":" + second;
+				pickerOption = {
+					dateFmt : 'yyyy-MM-dd HH:mm:ss',
+					minDate : dateFmt
+				};
 			});
-
-   
-    </script>
+</script>
 
 
 
@@ -155,72 +168,54 @@ body {
 
 	<!-- Static navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-				</button>
-				<a class="navbar-brand" href="${ctx }/home">xxxxxxxxxx</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="${ctx }/customer">客户管理</a></li>
-					<li class="active"><a href="${ctx }/schedule">日程</a></li>
-					<li><a href="${ctx }/history">联络历史</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">设置 <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="${ctx }/tag">联系人标签</a></li>
-						</ul></li>
-				</ul>
-				<form class="navbar-form navbar-left" action="${ctx }/research" role="search">
-					<div class="form-group">
-						<div class="input-group">
-							<input class="form-control" id="navbarInput-01" type="search"
-								placeholder="Search"> <span class="input-group-btn">
-								<a id="research" type="submit" class="btn"> <span
-									class="fui-search"></span>
-							</a>
-							</span>
-						</div>
-					</div>
-				</form>
-				<button class="btn btn-primary navbar-btn navbar-right" id="logout">登出</button>
-			</div>
-			<!--/.nav-collapse -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="${ctx }/home">xxxxxxxxxx</a>
 		</div>
-	</div>
-
-
-	<div class="container">
-
-		<div class="row">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<span class="panel-title">日程</span>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-8">
-							<div id='calendar'></div>
-						</div>
-						<div class="col-sm-4">
-							筛选条件<br> 全文：
-							<div>
-								<input id="txsj" type="text" class="form-control input-sm"
-									placeholder="全文检索">
-							</div>
-							<button class="btn btn-primary" style="margin: 30px">查询</button>
-
-
-						</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="${ctx }/customer/list">客户管理</a></li>
+				<li class="active"><a href="${ctx }/schedule/list">日程</a></li>
+				<li><a href="${ctx }/history">联络历史</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">设置 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="${ctx }/tag">联系人标签</a></li>
+					</ul></li>
+			</ul>
+			<form class="navbar-form navbar-left" action="${ctx }/research"
+				role="search">
+				<div class="form-group">
+					<div class="input-group">
+						<input class="form-control" id="navbarInput-01" type="search"
+							placeholder="Search"> <span class="input-group-btn">
+							<a id="research" type="submit" class="btn"> <span
+								class="fui-search"></span>
+						</a>
+						</span>
 					</div>
 				</div>
-			</div>
+			</form>
+			<button class="btn btn-primary navbar-btn navbar-right" id="logout">登出</button>
 		</div>
+		<!--/.nav-collapse -->
 	</div>
-	<!-- /container -->
+
+	<div class="col-sm-8">
+		<div id='calendar'></div>
+	</div>
+	<div class="col-sm-4">
+		筛选条件<br> 全文：
+		<div>
+			<input id="txsj" type="text" class="form-control input-sm col-sm-1"
+				placeholder="全文检索">
+		</div>
+		<button class="btn btn-primary" style="margin: 30px">查询</button>
+	</div>
+
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
@@ -287,5 +282,6 @@ body {
 
 </body>
 <script type="text/javascript">
-   </script>
+	
+</script>
 </html>

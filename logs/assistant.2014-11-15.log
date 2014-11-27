@@ -1,0 +1,549 @@
+09:33:30.884 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+09:33:30.887 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+10:02:47.714 [http-bio-9080-exec-4] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+10:02:52.284 [http-bio-9080-exec-5] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+10:02:52.514 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+10:02:54.122 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+10:02:54.154 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:11:42.470 [http-bio-9080-exec-4] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+11:11:47.393 [http-bio-9080-exec-4] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+11:11:47.408 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:11:47.875 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:11:47.875 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:12:28.612 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:12:29.209 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:12:29.209 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:12:45.945 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:12:46.531 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:12:46.531 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:12:55.082 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:12:55.634 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:12:55.634 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:13:19.809 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:13:20.342 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:13:20.342 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:13:34.889 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:13:35.270 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:13:35.270 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:13:45.519 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:13:46.114 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:13:46.114 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:14:13.987 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:14:14.460 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:14:14.460 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:14:25.333 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:14:25.851 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:14:25.852 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:14:34.099 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:14:34.608 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:14:34.609 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:14:49.581 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:14:50.149 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:14:50.149 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:15:01.389 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:15:01.852 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:15:01.853 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:18:58.132 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:18:58.691 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:18:58.691 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:24:30.064 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:24:30.629 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:24:30.629 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:24:41.380 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:24:41.787 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:24:41.787 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:25:00.985 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:25:01.458 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:25:01.459 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:25:56.717 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:25:57.326 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:25:57.327 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:26:07.909 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:26:08.445 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:26:08.445 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:26:35.843 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:26:36.464 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:26:36.464 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:28:19.081 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:28:19.575 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:28:19.575 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:29:24.969 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:29:25.578 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:29:25.578 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:29:43.150 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:29:43.620 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:29:43.620 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:30:11.244 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:30:11.775 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:30:11.775 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:31:52.072 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:31:52.616 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:31:52.616 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:31:57.166 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:31:57.578 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:31:57.578 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:32:10.609 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:32:11.160 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:32:11.160 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:32:35.562 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:32:36.078 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:32:36.078 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:32:47.967 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:32:48.460 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:32:48.461 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:34:27.626 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:34:28.080 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:34:28.081 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:34:53.164 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:34:53.657 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:34:53.658 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:35:09.160 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:35:09.614 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:35:09.614 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:35:49.523 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:35:49.977 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:35:49.978 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:37:09.422 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:37:09.871 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:37:09.871 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:37:48.253 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:37:48.723 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:37:48.723 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:37:59.711 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:38:00.169 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:38:00.170 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:38:26.344 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:38:26.750 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:38:26.750 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:38:41.525 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:38:41.896 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:38:41.896 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:39:40.899 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:39:41.401 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:39:41.401 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:47:12.704 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:47:13.229 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:47:13.230 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:47:56.895 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:47:57.398 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:47:57.398 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:48:08.189 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:48:08.723 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:48:08.723 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:48:19.785 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:48:20.210 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:48:20.210 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:48:41.459 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:48:42.033 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:48:42.033 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:48:51.137 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:48:51.571 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:48:51.571 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:49:33.588 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:49:34.121 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:49:34.121 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:49:43.245 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:49:43.719 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:49:43.720 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+11:49:51.942 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+11:49:52.456 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+11:49:52.456 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:01:04.039 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:01:04.593 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:01:04.593 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:01:09.541 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:01:09.913 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:01:09.913 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:01:46.055 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:01:46.578 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:01:46.578 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:02:02.414 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:02:02.934 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:02:02.934 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:02:20.302 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:02:20.846 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:02:20.846 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:02:42.624 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:02:43.120 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:02:43.120 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:03:04.679 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:03:05.179 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:03:05.179 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:03:27.920 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:03:28.341 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:03:28.341 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+12:03:36.797 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+12:03:37.318 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+12:03:37.318 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:50:05.860 [http-bio-9080-exec-1] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:50:10.468 [http-bio-9080-exec-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+13:50:10.480 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:50:10.813 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:50:10.813 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:50:14.897 [http-bio-9080-exec-9] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:52:27.769 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+13:52:30.999 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.fail()
+13:52:35.468 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:52:35.968 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:52:35.968 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:52:44.583 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:52:44.583 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:54:50.055 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:54:50.520 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:54:50.520 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:54:59.883 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:55:00.402 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:55:00.403 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:55:50.631 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:55:51.059 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:55:51.059 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+13:56:00.052 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+13:56:00.320 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+13:56:00.320 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:00:20.709 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:00:57.742 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:00:58.367 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:00:58.367 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:01:04.903 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:01:05.378 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:01:05.379 [http-bio-9080-exec-10] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:02:02.185 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:02:25.729 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:02:26.236 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:02:26.236 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:03:41.468 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:03:42.049 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:03:42.049 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:03:44.569 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.delete()
+14:03:44.571 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.deleteCustInfoById()
+14:03:55.368 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:03:55.908 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:03:55.908 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:03:59.332 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:03:59.875 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:03:59.876 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:08:54.725 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:08:55.172 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:08:55.172 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:09:15.758 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+14:09:15.758 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=李四, custCompany=1234, custJob=1234, custAddress=1234, custPortrait=null, remark=11234C备注, emails=null, phones=null]
+14:09:15.758 [http-bio-9080-exec-5] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+14:09:21.799 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:09:22.199 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:09:22.199 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:09:25.522 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.delete()
+14:09:25.523 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.deleteCustInfoById()
+14:31:15.156 [http-bio-9080-exec-5] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+14:31:19.618 [http-bio-9080-exec-2] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+14:31:19.633 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:31:20.184 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:31:20.184 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:31:26.443 [http-bio-9080-exec-2] DEBUG c.c.a.controller.HomeController - 进入 HomeController.home()
+14:31:27.966 [http-bio-9080-exec-5] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:31:32.318 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:31:32.318 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:34:00.853 [http-bio-9080-exec-4] DEBUG c.c.a.controller.ScheduleController - 进入 ScheduleController.schedule()
+14:34:04.946 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:34:04.946 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:34:14.674 [http-bio-9080-exec-4] DEBUG c.c.a.controller.ScheduleController - 进入 ScheduleController.schedule()
+14:34:16.084 [http-bio-9080-exec-4] DEBUG c.c.a.controller.HistoryController - 进入 HistoryController.history()
+14:34:17.216 [http-bio-9080-exec-4] DEBUG c.c.a.controller.ScheduleController - 进入 ScheduleController.schedule()
+14:34:18.843 [http-bio-9080-exec-4] DEBUG c.c.a.controller.TagController - 进入 TagController.settingsTags()
+14:34:21.897 [http-bio-9080-exec-2] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:34:28.725 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:34:29.214 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:34:29.214 [http-bio-9080-exec-2] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:58:07.699 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+14:58:10.852 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+14:58:14.877 [http-bio-9080-exec-9] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+14:58:14.895 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:58:15.385 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:58:15.385 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+14:58:32.578 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+14:58:32.578 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=李四, custCompany=123, custJob=123, custAddress=123, custPortrait=null, remark=xxxxx, emails=null, phones=null]
+14:58:32.578 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+14:58:44.172 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.delete()
+14:58:44.172 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.deleteCustInfoById()
+14:58:50.439 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+14:58:50.913 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+14:58:50.913 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:00:55.214 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:00:55.711 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:00:55.711 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:09:51.089 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:09:51.920 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:09:51.920 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:10:41.793 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+15:10:46.580 [http-bio-9080-exec-6] DEBUG c.c.a.controller.LoginController - 进入 LoginController.fail()
+15:10:52.512 [http-bio-9080-exec-1] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+15:11:00.103 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:11:00.926 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:11:00.927 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:11:11.057 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+15:11:11.057 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=测试, custCompany=1, custJob=121, custAddress=21, custPortrait=null, remark=12, emails=null, phones=null]
+15:11:11.058 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+15:11:32.891 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:11:33.593 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:11:33.593 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:11:53.971 [http-bio-9080-exec-5] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:11:54.613 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:11:54.614 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:12:16.052 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:12:16.847 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:12:16.847 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:12:26.007 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+15:12:26.007 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=12312312, custCompany=3123123, custJob=12312312, custAddress=31231123123, custPortrait=null, remark=12312312, emails=null, phones=null]
+15:12:26.007 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+15:57:17.264 [http-bio-9080-exec-3] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+15:57:23.080 [http-bio-9080-exec-8] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+15:57:23.099 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:57:23.688 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:57:23.689 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:57:26.852 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.delete()
+15:57:26.853 [http-bio-9080-exec-8] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.deleteCustInfoById()
+15:58:27.635 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+15:58:28.600 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+15:58:28.600 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+15:59:13.672 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+15:59:13.672 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=李四, custCompany=青牛软件, custJob=软件工程师, custAddress=北京海淀区XXX, custPortrait=null, remark=adf敌法, emails=null, phones=null]
+15:59:13.672 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+16:27:21.357 [http-bio-9080-exec-8] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:27:28.849 [http-bio-9080-exec-7] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+16:27:28.878 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:27:51.479 [http-bio-9080-exec-14] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:27:56.437 [http-bio-9080-exec-14] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:28:00.338 [http-bio-9080-exec-4] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+16:28:00.359 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:28:01.072 [http-bio-9080-exec-15] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:28:01.073 [http-bio-9080-exec-15] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:28:20.588 [http-bio-9080-exec-15] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.add()
+16:28:20.589 [http-bio-9080-exec-15] DEBUG c.c.a.controller.CustomerController - #customer=CustInfo [custId=null, custName=xxxx, custCompany=xxxx, custJob=xxxx, custAddress=xxxx, custPortrait=null, remark=xxxx, emails=null, phones=null]
+16:28:20.589 [http-bio-9080-exec-15] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.save()
+16:30:53.566 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:30:54.480 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:30:54.480 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:34:02.315 [http-bio-9080-exec-8] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:34:03.229 [http-bio-9080-exec-19] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:34:03.229 [http-bio-9080-exec-19] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:34:42.405 [http-bio-9080-exec-19] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:34:43.577 [http-bio-9080-exec-1] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:34:43.577 [http-bio-9080-exec-1] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:43:25.921 [http-bio-9080-exec-10] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:43:26.708 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:43:26.708 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:43:29.489 [http-bio-9080-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+16:43:53.147 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:43:53.991 [http-bio-9080-exec-12] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:43:53.991 [http-bio-9080-exec-12] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:43:54.771 [http-bio-9080-exec-12] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+16:44:48.698 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+16:44:48.699 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+16:44:52.664 [http-bio-9080-exec-4] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:44:57.056 [http-bio-9080-exec-7] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+16:44:57.477 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:44:58.163 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:44:58.205 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:45:10.008 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+16:45:35.335 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:45:38.060 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:45:38.060 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:45:50.788 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:45:51.898 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:45:51.898 [http-bio-9080-exec-3] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:45:57.648 [http-bio-9080-exec-3] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+16:48:23.419 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+16:48:23.420 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+16:48:26.346 [http-bio-9080-exec-4] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:48:30.419 [http-bio-9080-exec-4] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+16:48:30.552 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:48:31.125 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:48:31.169 [http-bio-9080-exec-4] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:48:35.276 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+16:49:09.735 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+16:49:09.736 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+16:49:12.792 [http-bio-9080-exec-4] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+16:49:16.733 [http-bio-9080-exec-7] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+16:49:16.924 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+16:49:17.556 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+16:49:17.595 [http-bio-9080-exec-7] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+16:49:23.586 [http-bio-9080-exec-7] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+17:05:16.638 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+17:05:16.639 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+17:06:00.157 [http-bio-9080-exec-2] DEBUG c.c.a.controller.LoginController - 进入 LoginController.login()
+17:09:06.417 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.setAccountInfoService()
+17:09:06.418 [localhost-startStop-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.initCredentialsMatcher()
+17:09:29.584 [http-bio-9080-exec-1] DEBUG c.c.assistant.service.ShiroDbRealm - 进入 ShiroDbRealm.doGetAuthenticationInfo()
+17:09:29.922 [http-bio-9080-exec-2] DEBUG c.c.a.controller.HomeController - 进入 HomeController.home()
+17:09:36.600 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+17:09:37.145 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+17:09:37.189 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+17:09:38.362 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+17:09:38.984 [http-bio-9080-exec-6] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+17:09:38.984 [http-bio-9080-exec-6] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+17:09:44.299 [http-bio-9080-exec-4] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+17:15:11.026 [http-bio-9080-exec-2] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+17:15:11.589 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+17:15:11.590 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+17:15:49.340 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.customer()
+17:15:51.953 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.getAll()
+17:15:51.953 [http-bio-9080-exec-9] DEBUG c.c.a.service.CustomerService - 进入 CustomerService.findCustInfoById()
+17:16:04.624 [http-bio-9080-exec-9] DEBUG c.c.a.controller.CustomerController - 进入 CustomerController.update()
+17:20:54.040 [localhost-startStop-1] ERROR o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext-shiro.xml]: Cannot resolve reference to bean 'securityManager' while setting bean property 'securityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext-shiro.xml]: Cannot resolve reference to bean 'shiroDbRealm' while setting bean property 'realm'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao': Cannot create inner bean '(inner bean)#70d114a' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#70d114a': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:232) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:618) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:467) ~[spring-context-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) [spring-web-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791) [tomcat-embed-core-7.0.30.jar:7.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285) [tomcat-embed-core-7.0.30.jar:7.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-7.0.30.jar:7.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.30.jar:7.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.30.jar:7.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_51]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext-shiro.xml]: Cannot resolve reference to bean 'shiroDbRealm' while setting bean property 'realm'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao': Cannot create inner bean '(inner bean)#70d114a' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#70d114a': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao': Cannot create inner bean '(inner bean)#70d114a' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#70d114a': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:290) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:294) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#70d114a': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:442) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:989) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:276) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Cannot create inner bean 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' of type [com.channelsoft.assistant.util.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:290) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 64 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.channelsoft.assistant.util.Hibernates#20ef6f6d' defined in URL [file:/Users/tenanty/git/assistant/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:597) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:989) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:276) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String com.channelsoft.assistant.util.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:188) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:586) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 79 common frames omitted
+Caused by: java.lang.RuntimeException: Could not get database url
+	at com.channelsoft.assistant.util.Hibernates.getJdbcUrlFromDataSource(Hibernates.java:52) ~[classes/:na]
+	at com.channelsoft.assistant.util.Hibernates.getDialect(Hibernates.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_51]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:166) ~[spring-beans-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	... 80 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.7.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[na:1.7.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.7.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[na:1.7.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2408) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2445) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.22.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.7.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[na:1.7.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.7.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[na:1.7.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334) ~[mysql-connector-java-5.1.22.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:702) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:634) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:488) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:144) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:116) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:103) ~[tomcat-jdbc-7.0.42.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127) ~[tomcat-jdbc-7.0.42.jar:na]
+	at com.channelsoft.assistant.util.Hibernates.getJdbcUrlFromDataSource(Hibernates.java:46) ~[classes/:na]
+	... 86 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.7.0_51]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[na:1.7.0_51]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[na:1.7.0_51]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[na:1.7.0_51]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.7.0_51]
+	at java.net.Socket.connect(Socket.java:579) ~[na:1.7.0_51]
+	at java.net.Socket.connect(Socket.java:528) ~[na:1.7.0_51]
+	at java.net.Socket.<init>(Socket.java:425) ~[na:1.7.0_51]
+	at java.net.Socket.<init>(Socket.java:241) ~[na:1.7.0_51]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259) ~[mysql-connector-java-5.1.22.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.22.jar:na]
+	... 108 common frames omitted

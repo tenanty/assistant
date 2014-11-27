@@ -24,8 +24,12 @@
 <script type="text/javascript"
 	src="${ctx}/static/flatui/dist/js/flat-ui-pro.min.js"></script>
 <script type="text/javascript"
+	src="${ctx}/static/flatui/dist/js/application.js"></script>
+	
+<script type="text/javascript"
 	src="${ctx}/static/datatables/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="${ctx}/static/customer/qframe.js"></script>
+
 
 <script type="text/javascript">
 	var oTable;
@@ -127,11 +131,33 @@
 						//点击关闭按钮逻辑
 						jQuery('#closeButton').click(function() {
 							console.log("closeButton...");
+							
+							console.log("yyyyyyyyyyyy");
+							$("#phonelist").html('')
+							.append(
+									'<div>移动电话<span class=\"fui-plus\" onclick=\"addphone()\"></span><input type=\"text\" class=\"form-control input-sm\" name=\"phone\" placeholder=\"移动电话\" /></div>');
+							console.log("xxxxxxxxxxxx");
 							//form清理
 							$('#myForm')[0].reset();
 							//隐藏modal输入框
 							$("#myModal").modal('hide');
 						});
+						
+						jQuery('#myModal').on('hidden.bs.modal', function (e) {
+							  console.log("hidden.bs.modal......");
+							});
+						
+						jQuery('#myModal').on('hide.bs.modal', function (e) {
+							  console.log("hide.bs.modal......");
+							});
+						
+						jQuery('#myModal').on('show.bs.modal', function (e) {
+							  console.log("show.bs.modal......");
+							});
+						
+						jQuery('#myModal').on('shown.bs.modal', function (e) {
+							  console.log("shown.bs.modal......");
+							});
 						
 						//点击保存按钮
 						jQuery('#saveButton').click(function() {
@@ -232,8 +258,8 @@ li {
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="${ctx }/customer">客户管理</a></li>
-				<li><a href="${ctx }/schedule">日程</a></li>
+				<li class="active"><a href="${ctx }/customer/list">客户管理</a></li>
+				<li><a href="${ctx }/schedule/list">日程</a></li>
 				<li><a href="${ctx }/history">联络历史</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">设置 <b class="caret"></b></a>

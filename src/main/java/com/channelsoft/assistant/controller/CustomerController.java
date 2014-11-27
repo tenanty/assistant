@@ -28,6 +28,7 @@ import com.channelsoft.assistant.service.CustomerService;
  *
  */
 @Controller
+@RequestMapping(value = "/customer")
 public class CustomerController {
 	Logger logger = LoggerFactory.getLogger(getClass());
 	@Autowired
@@ -37,7 +38,7 @@ public class CustomerController {
 	 * 进入列表页面
 	 * @return
 	 */
-	@RequestMapping(value = "/customer/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list() {
 		logger.debug("进入 CustomerController.customer()");
 		return "business/customer";
@@ -47,7 +48,7 @@ public class CustomerController {
 	 * 获取所有记录
 	 * @return
 	 */
-	@RequestMapping(value = "/customer/all", method = RequestMethod.GET)
+	@RequestMapping(value = "/all", method = RequestMethod.GET)
 	@ResponseBody
 	public DatatablesResponse<Customer> getAll() {
 		logger.debug("进入 CustomerController.getAll()");
@@ -63,7 +64,7 @@ public class CustomerController {
 	 * @param customer
 	 * @return
 	 */
-	@RequestMapping(value = "/customer",method = RequestMethod.POST)
+	@RequestMapping(value = "/",method = RequestMethod.POST)
 	@ResponseBody
 	public DatatablesResponse<Customer> add(Customer customer) {
 		logger.debug("进入 CustomerController.add()");
@@ -86,7 +87,7 @@ public class CustomerController {
 	 * @return
 	 */
 	// 使用restful类型的url进行设置
-	@RequestMapping(value = "/customer/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	@ResponseBody
 	public DatatablesResponse<Customer> delete(@PathVariable("id") Long id) {
 		logger.debug("进入 CustomerController.delete()");
@@ -103,7 +104,7 @@ public class CustomerController {
 	 * @param customer
 	 * @return
 	 */
-	@RequestMapping(value = "/customer/{id}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	@ResponseBody
 	public DatatablesResponse<Customer> update(@PathVariable("id") Long id,Customer customer){
 		logger.debug("进入 CustomerController.update()");
@@ -118,7 +119,7 @@ public class CustomerController {
 	 * @param customer
 	 * @return
 	 */
-	@RequestMapping(value = "/customer/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	public DatatablesResponse<Customer> getCustomer(@PathVariable("id") Long id,Customer customer){
 		logger.debug("进入 CustomerController.update()");
